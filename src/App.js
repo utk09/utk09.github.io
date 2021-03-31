@@ -13,10 +13,16 @@ export default function App() {
     <Router>
       <Suspense
         fallback={
-          <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-              <div class="flex flex-col text-center mb-12">
-                <img src="/images/loader.gif" alt="loader" />
+          <section>
+            <div className="flex h-screen">
+              <div className="m-auto">
+                <img
+                  className=""
+                  width="128px"
+                  height="128px"
+                  src="/images/loader.gif"
+                  alt="loader"
+                />
               </div>
             </div>
           </section>
@@ -29,6 +35,6 @@ export default function App() {
           <Route component={NotFound} />
         </Switch>
       </Suspense>
-    </Router >
+    </Router>
   );
 }
