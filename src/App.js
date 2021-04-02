@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
 
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 const Home = lazy(() => import("./pages/home"));
 const AllProjects = lazy(() => import("./pages/all-projects"));
@@ -39,6 +40,7 @@ export default function App() {
           <Route component={NotFound} />
         </Switch>
       </Suspense>
+      <Footer />
     </Router>
   );
 }
