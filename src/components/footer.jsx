@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <>
-      <div className="relative mt-16 bg-purple-700 -z-10">
+      <div className="relative mt-16 bg-purple-700">
         <svg
           className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-purple-700"
           preserveAspectRatio="none"
@@ -42,7 +42,7 @@ const Footer = () => {
               <div className="flex">
                 <p className="mr-1 text-gray-100">Phone:</p>
                 <a
-                  href="tel:850-123-5021"
+                  href="tel:+91-9969-6869-14"
                   aria-label="Phone Number - +91-9969-6869-14"
                   title="Phone Number"
                   className="transition-colors duration-300 text-gray-200 hover:text-purple-400"
