@@ -1,6 +1,6 @@
 // @ts-check
 import React from 'react';
-import { AiFillGithub, AiFillDribbbleCircle, AiFillFilePdf } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillDribbbleCircle, AiFillFilePdf } from 'react-icons/ai';
 
 
 const Hero = () => {
@@ -17,6 +17,7 @@ const Hero = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vero maxime nam consectetur commodi, architecto, corrupti asperiores distinctio deserunt atque cumque deleniti incidunt! Et iure quo nostrum quidem quis quasi sapiente eligendi reprehenderit omnis rerum architecto unde ex in error soluta aliquid obcaecati natus minima optio perferendis rem, sunt nulla?
               </p>
               <div className="flex justify-center">
+                {/* Github */}
                 <a href="https://github.com/utk09"
                   target="_blank"
                   rel="noopener noreferrer">
@@ -25,19 +26,42 @@ const Hero = () => {
                     title="Github"
                     className="mr-2 hover:text-gray-900" size="2.5em" />
                 </a>
-                <AiFillDribbbleCircle
-                  aria-label="Dribbble"
-                  title="Dribbble"
-                  className="mr-2 hover:text-pink-600" size="2.5em" />
-                <AiFillFilePdf
-                  aria-label="Academic Resume"
-                  title="Academic Resume"
-                  className="mr-2 hover:text-red-800" size="2.5em" />
-                <AiFillFilePdf
-                  aria-label="Resume"
-                  title="Resume"
-                  className="mr-2 hover:text-blue-800" size="2.5em" />
-
+                {/* Linkedin */}
+                <a href="https://github.com/utk09"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <AiFillLinkedin
+                    aria-label="LinkedIn"
+                    title="LinkedIn"
+                    className="mr-2 hover:text-blue-800" size="2.5em" />
+                </a>
+                {/* Dribbble */}
+                <a href="https://dribbble.com/anonymous-legion"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <AiFillDribbbleCircle
+                    aria-label="Dribbble"
+                    title="Dribbble"
+                    className="mr-2 hover:text-pink-600" size="2.5em" />
+                </a>
+                {/* Academic Resume */}
+                <a href="/assets/Utkarsh_A_Tiwari_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <AiFillFilePdf
+                    aria-label="Academic Resume"
+                    title="Academic Resume"
+                    className="mr-2 hover:text-red-800" size="2.5em" />
+                </a>
+                {/* Resume */}
+                <a href="/assets/Tiwari_Utkarsh_Ashok_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <AiFillFilePdf
+                    aria-label="Resume"
+                    title="Resume"
+                    className="mr-2 hover:text-green-600" size="2.5em" />
+                </a>
                 {/* <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
                 <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> */}
               </div>
