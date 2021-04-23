@@ -8,16 +8,16 @@ const Header = () => {
     <div className="bg-gray-900">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
-          <a
+          {/* <a
             href="/"
             aria-label="Utkarsh Tiwari"
             title="Utkarsh Tiwari"
             className="inline-flex items-center"
-          >
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-              Utkarsh Tiwari
+          > */}
+          <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
+            Utkarsh Tiwari
             </span>
-          </a>
+          {/* </a> */}
           <ul className="items-center hidden space-x-8 lg:flex">
             <li>
               <a
@@ -79,16 +79,16 @@ const Header = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <a
+                      {/* <a
                         href="/"
                         aria-label="Utkarsh Tiwari"
                         title="Utkarsh Tiwari"
                         className="inline-flex items-center"
-                      >
-                        <span className="text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Utkarsh Tiwari
+                      > */}
+                      <span className="text-xl font-bold tracking-wide text-gray-800 uppercase">
+                        Utkarsh Tiwari
                         </span>
-                      </a>
+                      {/* </a> */}
                     </div>
                     <div>
                       <button
