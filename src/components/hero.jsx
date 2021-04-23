@@ -71,7 +71,7 @@ const Hero = () => {
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <img className="object-cover object-center rounded" alt="utkarsh tiwari img"
-                src="/images/utkarsh-tiwari-photo.jpeg" />
+                src="/images/utkarsh-tiwari-photo.jpeg" width="100%" height="100%" />
             </div>
           </div>
         </section>
