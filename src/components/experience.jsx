@@ -28,9 +28,9 @@ const Experience = () => {
 
               <div className="relative">
                 <dt>
-                  <svg className="absolute h-6 w-6 text-green-500" data-todo-x-description="Heroicon name: outline/check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  {/* <svg className="absolute h-6 w-6 text-green-500" data-todo-x-description="Heroicon name: outline/check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+                  </svg> */}
                   <p className="ml-9 text-lg leading-6 font-medium text-gray-900">List view</p>
                 </dt>
                 <dd className="mt-2 ml-9 text-base text-gray-500">
@@ -40,9 +40,9 @@ const Experience = () => {
 
               <div className="relative">
                 <dt>
-                  <svg className="absolute h-6 w-6 text-green-500" data-todo-x-description="Heroicon name: outline/check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  {/* <svg className="absolute h-6 w-6 text-green-500" data-todo-x-description="Heroicon name: outline/check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+                  </svg> */}
                   <p className="ml-9 text-lg leading-6 font-medium text-gray-900">Keyboard shortcuts</p>
                 </dt>
                 <dd className="mt-2 ml-9 text-base text-gray-500">
@@ -52,9 +52,9 @@ const Experience = () => {
 
               <div className="relative">
                 <dt>
-                  <svg className="absolute h-6 w-6 text-green-500" data-todo-x-description="Heroicon name: outline/check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  {/* <svg className="absolute h-6 w-6 text-green-500" data-todo-x-description="Heroicon name: outline/check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
+                  </svg> */}
                   <p className="ml-9 text-lg leading-6 font-medium text-gray-900">Calendars</p>
                 </dt>
                 <dd className="mt-2 ml-9 text-base text-gray-500">
