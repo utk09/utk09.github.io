@@ -2,14 +2,17 @@ import React from 'react';
 
 import Hero from '../components/hero';
 import Skills from "../components/skills";
-import Experience from '../components/experience';
+import WorkExperience from '../components/workexperience';
+import FreelanceExperience from '../components/freelanceexperience';
+
 
 const Home = () => {
   return (
     <>
       <Hero />
       <Skills />
-      <Experience />
+      <WorkExperience />
+      <FreelanceExperience />
     </>
   );
 };
