@@ -1,13 +1,13 @@
 import React from 'react';
 
-const FreelanceExperience = () => {
+const VolunteerExperience = () => {
   return (
     <>
-      <div className="bg-gray-50">
+      <div className="bg-white">
         <div className="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div>
-            <h2 className="text-base font-semibold text-indigo-600 uppercase tracking-wide">FREELANCE EXPERIENCE</h2>
-            <p className="mt-2 text-3xl font-extrabold text-gray-900">Web Development</p>
+            <h2 className="text-base font-semibold text-indigo-600 uppercase tracking-wide">VOLUNTEER EXPERIENCE</h2>
+            <p className="mt-2 text-3xl font-extrabold text-gray-900">Leo Clubs</p>
             <p className="mt-4 text-lg text-gray-500">Software Development Engineer</p>
           </div>
           <div className="mt-12 lg:mt-0 lg:col-span-2">
@@ -56,4 +56,4 @@ const FreelanceExperience = () => {
   );
 };
 
-export default FreelanceExperience;
+export default VolunteerExperience;
