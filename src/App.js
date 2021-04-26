@@ -22,7 +22,6 @@ export default function App() {
             <div className="flex h-screen">
               <div className="m-auto">
                 <img
-                  className=""
                   width="128px"
                   height="128px"
                   src="/images/loader.gif"

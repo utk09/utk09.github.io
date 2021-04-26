@@ -40,6 +40,17 @@ const Footer = () => {
                 Contact
           </p>
               <div className="flex">
+                <p className="mr-1 text-gray-100">Mobile:</p>
+                <a
+                  href="tel:+91-8369-6459-26"
+                  aria-label="Mobile Number - +91-8369-6459-26"
+                  title="Mobile Number"
+                  className="transition-colors duration-300 text-gray-200 hover:text-purple-400"
+                >
+                  +91-8369-6459-26
+                </a>
+              </div>
+              <div className="flex">
                 <p className="mr-1 text-gray-100">Phone:</p>
                 <a
                   href="tel:+91-9969-6869-14"
@@ -48,7 +59,7 @@ const Footer = () => {
                   className="transition-colors duration-300 text-gray-200 hover:text-purple-400"
                 >
                   +91-9969-6869-14
-            </a>
+                </a>
               </div>
               <div className="flex">
                 <p className="mr-1 text-gray-100">Email:</p>
