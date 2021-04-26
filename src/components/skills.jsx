@@ -1,4 +1,6 @@
 import React from 'react';
+import ButtonCustom from './buttoncustom';
+
 
 const Skills = () => {
   return (
@@ -116,6 +118,8 @@ const Skills = () => {
                 </div>
               </li>
             </ul>
+
+            <ButtonCustom />
 
           </div>
         </div>
