@@ -3,6 +3,7 @@ import React from 'react';
 import {
   AiFillGithub,
   AiFillLinkedin,
+  AiFillYoutube,
   AiFillDribbbleCircle,
   AiFillFilePdf
 } from 'react-icons/ai';
@@ -39,6 +40,15 @@ const Hero = () => {
                     aria-label="LinkedIn"
                     title="LinkedIn"
                     className="mr-2 hover:text-blue-800" size="2.5em" />
+                </a>
+                {/* YouTube */}
+                <a href="https://www.youtube.com/c/TuplesEdu"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <AiFillYoutube
+                    aria-label="YouTube"
+                    title="YouTube"
+                    className="mr-2 hover:text-red-600" size="2.5em" />
                 </a>
                 {/* Dribbble */}
                 <a href="https://dribbble.com/anonymous-legion"

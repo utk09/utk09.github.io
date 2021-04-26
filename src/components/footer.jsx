@@ -142,7 +142,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
             <p className="text-sm text-gray-200">
-              © Copyright 2021 Utkarsh Tiwari. All rights reserved.
+              © Copyright 2021 Utkarsh Tiwari.
             </p>
           </div>
         </div>
