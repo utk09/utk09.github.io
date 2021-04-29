@@ -20,7 +20,7 @@ const Hero = () => {
                 {/* <br className="hidden lg:inline-block" />Lorem. */}
               </h1>
               <p className="mb-8 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vero maxime nam consectetur commodi, architecto, corrupti asperiores distinctio deserunt atque cumque deleniti incidunt! Et iure quo nostrum quidem quis quasi sapiente eligendi reprehenderit omnis rerum architecto unde ex in error soluta aliquid obcaecati natus minima optio perferendis rem, sunt nulla?
+                A student, an electronics enthusiast, a blogger, a reader, an orator and even a motivator sometimes. Writing blogs and short stories is my stress-buster. I excel in Python, Javascript, Web Development, Machine Learning, Arduino and Raspberry Pi. I have conducted workshops and seminars on Artificial Intelligence, Data Science, Web Development, Blockchain and many other topics. I'm the Co-Founder of Tuples Edu, an online tutoring platform. In future, I want to pursue Masters in Computer Science.
               </p>
               <div className="flex justify-center">
                 {/* Github */}
