@@ -9,28 +9,25 @@ const WorkExperience = () => {
             <h2 className="text-base font-semibold text-indigo-600 uppercase tracking-wide">WORK EXPERIENCE</h2>
             <p className="mt-2 text-3xl font-extrabold text-gray-900">Jio Platforms Limited</p>
             <p className="mt-4 text-lg text-gray-500">Software Development Engineer</p>
-            <p className="mt-1 text-lg text-gray-500">Analytics COE</p>
+            {/* <p className="mt-1 text-lg text-gray-500">Analytics COE</p> */}
           </div>
           <div className="mt-12 lg:mt-0 lg:col-span-2">
-            <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-rows-2 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+            <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-rows-1 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
 
-              <div className="relative">
+              <div>
                 <dt>
-                  <p className=" text-lg leading-6 font-medium text-gray-900">Invite team members</p>
+                  <p className=" text-lg leading-6 font-medium text-gray-900">Analytics COE</p>
                 </dt>
                 <dd className="mt-2  text-base text-gray-500">
-                  You can manage phone, email and chat conversations all from a single mailbox.
+                  As a part of the Jio Analytics COE Team, I'm working with Big Data tools like Hadoop, Kafka, NiFi, Spark, ZoomData and SQL.
               </dd>
+
+
               </div>
 
-              <div className="relative">
-                <dt>
-                  <p className=" text-lg leading-6 font-medium text-gray-900">List view</p>
-                </dt>
-                <dd className="mt-2  text-base text-gray-500">
-                  You can manage phone, email and chat conversations all from a single mailbox.
-              </dd>
-              </div>
+              {/* <div className="relative">
+
+              </div> */}
             </dl>
           </div>
         </div>
