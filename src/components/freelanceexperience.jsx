@@ -8,18 +8,21 @@ const FreelanceExperience = () => {
           <div>
             <h2 className="text-base font-semibold text-indigo-600 uppercase tracking-wide">FREELANCE EXPERIENCE</h2>
             <p className="mt-2 text-3xl font-extrabold text-gray-900">Web Development</p>
-            <p className="mt-4 text-lg text-gray-500">Software Development Engineer</p>
+            {/* <p className="mt-4 text-lg text-gray-500">Software Development Engineer</p> */}
           </div>
           <div className="mt-12 lg:mt-0 lg:col-span-2">
             <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-rows-4 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
 
               <div className="relative">
                 <dt>
-                  <p className=" text-lg leading-6 font-medium text-gray-900">Invite team members</p>
+                  <p className=" text-lg leading-6 font-medium text-gray-900">Maharashtra Tour Organisers' Association (MTOA)</p>
                 </dt>
                 <dd className="mt-2  text-base text-gray-500">
-                  You can manage phone, email and chat conversations all from a single mailbox.
-              </dd>
+                  Built a 12+ pages website for Maharashtra Tour Organisers' Association. You can find the code on
+                  <span>
+                    <a className="font-semibold hover:text-indigo-600" href="https://github.com/mtoaofficial/mtoa-website-2020" rel="noreferrer" target="_blank">{" "}Github</a>
+                  </span>
+                </dd>
               </div>
 
               <div className="relative">
