@@ -27,11 +27,15 @@ const FreelanceExperience = () => {
 
               <div className="relative">
                 <dt>
-                  <p className=" text-lg leading-6 font-medium text-gray-900">List view</p>
+                  <p className=" text-lg leading-6 font-medium text-gray-900">get Mentored</p>
                 </dt>
                 <dd className="mt-2  text-base text-gray-500">
-                  You can manage phone, email and chat conversations all from a single mailbox.
-              </dd>
+                  getMentored is an opinionated, personally curated list of learning paths for individuals who want to get started but are overwhelmed by the huge amount of resources that are available. Check out the website
+                   <span>
+                    <a className="font-semibold hover:text-indigo-600" href="https://getmentored.courses/" rel="noreferrer" target="_blank">{" "}@getMentored.courses
+                    </a>
+                  </span>
+                </dd>
               </div>
 
               <div className="relative">
