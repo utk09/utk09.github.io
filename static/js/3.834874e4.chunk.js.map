@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/all-projects.jsx"],"names":["AllProjects"],"mappings":"yHAAA,uBAUeA,UARK,WAClB,OACE","file":"static/js/3.834874e4.chunk.js","sourcesContent":["import React from 'react';\r\n\r\nconst AllProjects = () => {\r\n  return (\r\n    <div>\r\n      All Projects\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default AllProjects;\r\n"],"sourceRoot":""}
