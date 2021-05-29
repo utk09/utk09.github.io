@@ -8,7 +8,7 @@ const WorkExperience = () => {
           <div>
             <h2 className="text-base font-semibold text-indigo-600 uppercase tracking-wide">WORK EXPERIENCE</h2>
             <p className="mt-2 text-3xl font-extrabold text-gray-900">Jio Platforms Limited</p>
-            <p className="mt-4 text-lg text-gray-500">Software Development Engineer</p>
+            <p className="mt-2 text-md text-gray-500">Software Development Engineer</p>
             {/* <p className="mt-1 text-lg text-gray-500">Analytics COE</p> */}
           </div>
           <div className="mt-12 lg:mt-0 lg:col-span-2">

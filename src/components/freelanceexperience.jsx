@@ -8,6 +8,7 @@ const FreelanceExperience = () => {
           <div>
             <h2 className="text-base font-semibold text-indigo-600 uppercase tracking-wide">FREELANCE EXPERIENCE</h2>
             <p className="mt-2 text-3xl font-extrabold text-gray-900">Web Development</p>
+            <p className="mt-2 text-md text-gray-500">Frontend | Backend | SEO</p>
             {/* <p className="mt-4 text-lg text-gray-500">Software Development Engineer</p> */}
           </div>
           <div className="mt-12 lg:mt-0 lg:col-span-2">
