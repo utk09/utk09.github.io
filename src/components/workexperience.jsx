@@ -16,20 +16,19 @@ const WorkExperience = () => {
 
               <div>
                 <dt>
-                  <p className=" text-lg leading-6 font-medium text-gray-900">Analytics COE</p>
+                  <p className="text-lg leading-6 font-medium text-gray-900">Analytics COE</p>
                 </dt>
-                <dd className="mt-2  text-base text-gray-500">
+                <dd className="mt-2 text-base text-gray-500">
                   As a part of the Jio Analytics COE Team, I'm working with Big Data tools like Hadoop, Kafka, NiFi, Spark, ZoomData and SQL.
-              </dd>
-
+                </dd>
                 <dt>
                   <p className="mt-8 mb-0 text-lg leading-6 font-medium text-gray-900">User Acceptance Testing</p>
                 </dt>
                 <dd className="mt-2  mb-0 text-gray-500">
-                  Asthe testing Team Lead for JioMeet, I managed a team of 30 people and directly communicated with the Design & Development team to provide invaluable and timely feedback that helped refine the product. Worked with two project managementsoftware - Rational by IBM and DevOps by Microsoft.
-                  Contributed to the verification of Jio Mart, the New Commerce Application by Reliance Jio. Also worked on SAP HANA for backend application and catalogue management.
-                  Started an informative technicalseminarsession called Brown Bag Fridays and conducted seminars on Machine Learning, Data Science, Web Development, etc.
-              </dd>
+                  As the testing Team Lead for JioMeet, I managed a team of 30 people and directly communicated with the Design & Development team. Worked with two project management software - Rational by IBM and DevOps by Microsoft.
+                  <br />
+                  Started an informative technical seminar session called Brown Bag Fridays and conducted seminars on Machine Learning, Data Science, Web Development, etc.
+                </dd>
               </div>
 
               {/* <div className="relative">
