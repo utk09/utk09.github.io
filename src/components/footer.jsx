@@ -39,7 +39,7 @@ const Footer = () => {
               <p className="text-base font-bold tracking-wide text-white">
                 Contact
           </p>
-              <div className="flex">
+              {/* <div className="flex">
                 <p className="mr-1 text-gray-100">Mobile:</p>
                 <a
                   href="tel:+91-8369-6459-26"
@@ -60,7 +60,7 @@ const Footer = () => {
                 >
                   +91-9969-6869-14
                 </a>
-              </div>
+              </div> */}
               <div className="flex">
                 <p className="mr-1 text-gray-100">Email:</p>
                 <a
@@ -75,14 +75,14 @@ const Footer = () => {
               <div className="flex">
                 <p className="mr-1 text-gray-100">Address:</p>
                 <a
-                  href="https://goo.gl/maps/7Jzxa9jjTJEEMUE77"
+                  href="https://goo.gl/maps/xEs5Ch1xxVwcfUYa6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Address - Mumbai"
+                  aria-label="Address - Newcastle upon Tyne, UK"
                   title="Address"
                   className="transition-colors duration-300 text-gray-200 hover:text-purple-400"
                 >
-                  Mumbai, Maharashtra, India
+                  Newcastle upon Tyne, UK
             </a>
               </div>
             </div>
