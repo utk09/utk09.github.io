@@ -8,7 +8,7 @@ const VolunteerExperience = () => {
           <div>
             <h2 className="text-base font-semibold text-indigo-600 uppercase tracking-wide">VOLUNTEER EXPERIENCE</h2>
             <p className="mt-2 text-3xl font-extrabold text-gray-900">Leo Clubs</p>
-            <p className="mt-2 text-md text-gray-500">Leo Club of Walkeshwar | Leo District 3231 A1 | Leo Multiple 3231</p>
+            <p className="mt-2 text-md text-gray-500">Leo Club of Walkeshwar | Leo District 3231 A1 | Leo Multiple Districts 3231</p>
           </div>
           <div className="mt-12 lg:mt-0 lg:col-span-2">
             <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-rows-1 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
@@ -18,19 +18,19 @@ const VolunteerExperience = () => {
                   <p className="text-lg leading-6 font-medium text-gray-900">President, Leo Club of Walkeshwar</p>
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, vel?
+                  Oversaw the functioning of the club, including the planning and maintenance of the club activities. Led a team of 20 volunteers to carry out the club activities.
                 </dd>
                 <dt>
                   <p className="mt-8 mb-0 text-lg leading-6 font-medium text-gray-900">Director of Events, Leo District 3231 A1</p>
                 </dt>
                 <dd className="mt-2  mb-0 text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, commodi!
+                  Planned and executed multiple events for the club. Have been awarded the "Most Innovative Leo" award twice in two years. Have successfully organized more than 30 events for the club which have touched the lives of over 15,000 people.
                 </dd>
                 <dt>
                   <p className="mt-8 mb-0 text-lg leading-6 font-medium text-gray-900">Website Director, Leo Multiple 3231</p>
                 </dt>
                 <dd className="mt-2  mb-0 text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, alias?
+                  Worked as the website director for the club to maintain the website and improve the SEO along with fine tuning it.
                 </dd>
               </div>
 

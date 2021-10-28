@@ -16,7 +16,7 @@ const Header = () => {
           > */}
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
             Utkarsh Tiwari
-            </span>
+          </span>
           {/* </a> */}
           <ul className="items-center hidden space-x-8 lg:flex">
             <li>
@@ -29,7 +29,7 @@ const Header = () => {
                 Home
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="/projects"
                 aria-label="Projects"
@@ -38,12 +38,12 @@ const Header = () => {
               >
                 Projects
               </a>
-            </li>
+            </li> */}
           </ul>
           <ul className="items-center hidden space-x-8 lg:flex">
             <li>
               <a
-                href="/"
+                href="mailto:utkarsh999tiwari@gmail.com"
                 className="inline-flex items-center justify-center h-9 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-600 hover:bg-purple-800 focus:shadow-outline focus:outline-none"
                 aria-label="Contact"
                 title="Contact"
@@ -87,7 +87,7 @@ const Header = () => {
                       > */}
                       <span className="text-xl font-bold tracking-wide text-gray-800 uppercase">
                         Utkarsh Tiwari
-                        </span>
+                      </span>
                       {/* </a> */}
                     </div>
                     <div>

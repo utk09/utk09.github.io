@@ -19,8 +19,11 @@ const Hero = () => {
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Utkarsh Tiwari
                 {/* <br className="hidden lg:inline-block" />Lorem. */}
               </h1>
+              <p className="mb-1 leading-relaxed text-left">
+                A self-taught Web Developer with experience in MERN Stack (MongoDB, Express.js, React, Node.js), I have been building websites for the past four years. Professionally, worked as a Data Engineer for a year at Reliance Jio Platforms Ltd., India. A highly motivated individual and a team player, I look forward to learning new technologies in the field of Data Engineering and Full-Stack Web Development.
+              </p>
               <p className="mb-8 leading-relaxed text-left">
-                A student, an electronics enthusiast, a blogger, a reader, an orator and even a motivator sometimes. Writing blogs and short stories is my stress-buster. I excel in Python, Javascript, Web Development, Machine Learning, Arduino and Raspberry-Pi. I have conducted workshops and seminars on Artificial Intelligence, Data Science, Web Development, Blockchain and many other topics. I'm the Co-Founder of Tuples Edu, an online tutoring platform. In future, I want to pursue Masters in Computer Science.
+                Currently pursuing a Masters in Computer Science from Newcastle University, UK. I'm also the co-founder of Tuples Edu, an online tutoring platform.
               </p>
               <div className="flex justify-center">
                 {/* Github */}
@@ -33,7 +36,7 @@ const Hero = () => {
                     className="mr-2 hover:text-gray-900" size="2.5em" />
                 </a>
                 {/* Linkedin */}
-                <a href="https://github.com/utk09"
+                <a href="https://www.linkedin.com/in/utkarsh09/"
                   target="_blank"
                   rel="noopener noreferrer">
                   <AiFillLinkedin
