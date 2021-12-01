@@ -144,6 +144,9 @@ const Footer = () => {
             <p className="text-sm text-gray-200">
               © Copyright 2021 Utkarsh Tiwari.
             </p>
+            <p className="text-sm text-gray-200">
+              This website uses Google Analytics.
+            </p>
           </div>
         </div>
       </div>
