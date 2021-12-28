@@ -1,3 +1,18 @@
+/**
+   * For Purge CSS:
+   * bg-teal-100
+   * bg-teal-800
+   * bg-green-100
+   * bg-emerald-800
+   * bg-amber-300
+   * bg-orange-100
+   * bg-yellow-800
+   * bg-blue-200
+   * bg-violet-300
+   * bg-indigo-100
+   * bg-indigo-600
+   * bg-indigo-700
+   */
 export const skills = [
   {
     id: 0,
