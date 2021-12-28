@@ -13,7 +13,7 @@
    * bg-indigo-600
    * bg-indigo-700
    */
-export const skills = [
+export const skillsData = [
   {
     id: 0,
     img: "/images/html-css-logo.png",
