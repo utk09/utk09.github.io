@@ -31,7 +31,7 @@ const FreelanceExperience = () => {
                 <dd className="mt-2  text-base text-gray-500">
                   getMentored is an opinionated, personally curated list of learning paths for individuals who want to get started but are overwhelmed by the huge amount of resources that are available. Check out the website
                    <span>
-                    <a className="font-semibold hover:text-indigo-600" href="https://getmentored.courses/" rel="noreferrer" target="_blank">{" "}@getMentored.courses
+                    <a className="font-semibold hover:text-indigo-600" href="https://getmentored.netlify.app/" rel="noreferrer" target="_blank">{" "}@getMentored.courses
                     </a>
                   </span>
                 </dd>
