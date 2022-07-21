@@ -1,7 +1,7 @@
 {
   "name": "utk09-github-io",
-  "homepage": "https://utk09.github.io",
-  "version": "0.1.0",
+  "homepage": "https://utkarsh-tiwari-portfolio-react.netlify.app/",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.1",
@@ -15,10 +15,8 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "craco start",
-    "build": "GENERATE_SOURCEMAP=false craco build && cp build/index.html build/404.html",
+    "build": "GENERATE_SOURCEMAP=false craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
