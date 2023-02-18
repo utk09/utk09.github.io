@@ -1,5 +1,5 @@
-/* Poppins, Ralewat, Roboto Mono */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500&display=swap");
+/* PT Sans, PT Serif, Source Code Pro */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&family=Source+Code+Pro:wght@300;400;500;600;700&display=swap");
 
 :root {
   --primary-color: #e07000;
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "PT Serif", serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--dark-color);
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Source Code Pro", monospace;
   font-weight: 600;
   margin: 0 0 15px 0;
 }
@@ -50,7 +50,7 @@ main {
 }
 
 .p-headline {
-  font-family: "Roboto Mono", monospace;
+  font-family: "PT Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.2;
@@ -183,10 +183,10 @@ main {
 }
 
 .skills-ul {
-  font-family: "Roboto Mono", monospace;
+  font-family: "PT Sans", sans-serif;
   list-style-type: "\1F340";
   padding: 0 0 1rem 0;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 
 .skills-ul li {
@@ -200,8 +200,8 @@ main {
 
 /* --------Section - Experience-------- */
 .experience {
+  font-family: "PT Sans", sans-serif;
   margin: 2rem auto;
-  /* padding: 0 1rem; */
 }
 
 .experience-h2-1 {
@@ -229,15 +229,15 @@ main {
 .experience-ul {
   list-style-type: square;
   padding: 1rem 0;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 
 .experience-ul li {
   margin-bottom: 0.5rem;
 }
 
-.experience-div-2:nth-child(odd) ul li {
-  list-style-type: "\1F4BB";
+.experience-div-2 ul li {
+  list-style-type: "\29BF";
 }
 /* --------Section - Experience - End-------- */
 
@@ -251,6 +251,12 @@ main {
   font-size: 2rem;
 }
 
+.projects-div-1 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
 .projects-h3-1 {
   color: var(--secondary-color);
   text-transform: uppercase;
@@ -259,7 +265,9 @@ main {
 }
 
 .projects-ul {
-  font-family: "Roboto Mono", monospace;
+  font-family: "PT Sans", sans-serif;
+  padding: 1rem 0;
+  margin: 0 1rem;
   list-style-type: square;
 }
 
@@ -350,6 +358,10 @@ main {
   }
 
   .experience-div-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .projects-div-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }

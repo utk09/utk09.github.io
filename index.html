@@ -1,293 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon.ico" />
+    <meta name="theme-color" content="#0369a1" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./assets/images/favicon.ico" />
-  <meta name="theme-color" content="#0369a1" />
+    <!-- Global site tag (gtag.js) - Google Analytics Old -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H98RBFSDQ5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics Old -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H98RBFSDQ5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-H98RBFSDQ5");
+    </script>
 
-    gtag('config', 'G-H98RBFSDQ5');
-  </script>
+    <!-- Global site tag (gtag.js) - Google Analytics New -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-67H9CP0Z8Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics New -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-67H9CP0Z8Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-67H9CP0Z8Q");
+    </script>
 
-    gtag('config', 'G-67H9CP0Z8Q');
-  </script>
+    <!-- Primary Meta Tags -->
+    <title>Utkarsh Tiwari | Portfolio | utk09.github.io</title>
+    <meta name="title" content="Utkarsh Tiwari | Portfolio | utk09.github.io" />
+    <meta
+      name="description"
+      content="Web Developer | Data Engineer | Aspiring Fullstack Developer | London, UK."
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon-16x16.png"
+    />
 
-  <!-- Primary Meta Tags -->
-  <title>Utkarsh Tiwari | Portfolio | utk09.github.io</title>
-  <meta name="title" content="Utkarsh Tiwari | Portfolio | utk09.github.io" />
-  <meta name="description"
-    content="Self-taught Web Developer | Data Engineer | Aspiring Fullstack Developer | Newcastle upon Tyne, UK." />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://utk09.github.io/" />
+    <meta
+      property="og:title"
+      content="Utkarsh Tiwari | Portfolio | utk09.github.io"
+    />
+    <meta
+      property="og:description"
+      content="Web Developer | Data Engineer | Aspiring Fullstack Developer | London, UK."
+    />
+    <meta
+      property="og:image"
+      content="./assets/images/android-chrome-192x192.png"
+    />
+    <meta
+      property="og:image"
+      content="./assets/images/android-chrome-512x512.png"
+    />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://utk09.github.io/" />
-  <meta property="og:title" content="Utkarsh Tiwari | Portfolio | utk09.github.io" />
-  <meta property="og:description"
-    content="Self-taught Web Developer | Data Engineer | Aspiring Fullstack Developer | Newcastle upon Tyne, UK." />
-  <meta property="og:image" content="./assets/images/android-chrome-512x512.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://utk09.github.io/" />
+    <meta
+      property="twitter:title"
+      content="Utkarsh Tiwari | Portfolio | utk09.github.io"
+    />
+    <meta
+      property="twitter:description"
+      content="Web Developer | Data Engineer | Aspiring Fullstack Developer | London, UK."
+    />
+    <meta
+      property="twitter:image"
+      content="./assets/images/android-chrome-192x192.png"
+    />
+    <meta
+      property="twitter:image"
+      content="./assets/images/android-chrome-512x512.png"
+    />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://utk09.github.io/" />
-  <meta property="twitter:title" content="Utkarsh Tiwari | Portfolio | utk09.github.io" />
-  <meta property="twitter:description"
-    content="Self-taught Web Developer | Data Engineer | Aspiring Fullstack Developer | Newcastle upon Tyne, UK." />
-  <meta property="twitter:image" content="./assets/images/android-chrome-512x512.png" />
+    <link rel="manifest" href="./assets/images/manifest.json" />
+    <link rel="preload" href="./styles.min.css" as="style" />
+    <link rel="stylesheet" href="./styles.min.css" />
+  </head>
 
-  <link rel="manifest" href="./assets/images/manifest.json" />
-  <link rel="preload" href="./styles.min.css" as="style">
-  <link rel="stylesheet" href="./styles.min.css">
-</head>
-
-<body>
-
-  <div class="container">
-    <!-- Main Headline -->
-    <main>
-      <p class="p-headline">"If you get to a certain achievement/platform, it's your unsaid duty to help others reach
-        the
-        same level in lesser time." ~Anonymous</p>
-
-      <div class="main-div-1">
-        <div class="main-div-2">
-          <h1>
-            <span class="main-h1-span-1">
-              Frontend Developer | Data Engineer | Aspiring Fullstack Developer
-            </span>
-          </h1>
-          <h1>
-            <span class="main-h1-span-2">
-              <span class="main-h1-span-3">Utkarsh </span>
-              <span class="main-h1-span-4">Tiwari</span>
-            </span>
-          </h1>
-          <p class="main-p-1">
-            I am a self-taught MERN stack web developer and have worked at Reliance Jio Platforms, India as a Data Engineer. 
-            I am also a recent graduate of Newcastle University in the UK, where I earned a distinction in my MSc in Computer Science. 
-            Currently, I am working as a Software Engineer in London and also serving as a MLH Pod Leader & Coach. 
-            My diverse background and passion for technology make me well-suited for tackling complex challenges and delivering innovative solutions.
-          </p>
-          <div class="main-div-3">
-            <p class="main-p-2">
-              Connect with me on:
-              <a target="_blank" rel="noreferrer" aria-label="social-media-account" href="https://github.com/utk09"
-                class="main-a-1">GitHub</a>,
-              <a target="_blank" rel="noreferrer" aria-label="social-media-account"
-                href="https://www.linkedin.com/in/utkarsh09/" class="main-a-1"> LinkedIn</a>,
-              <a target="_blank" rel="noreferrer" aria-label="social-media-account" href="https://twitter.com/utk0909"
-                class="main-a-1"> Twitter</a>.
-            </p>
-            <p class="main-p-2">
-              Have an opportunity?
-              <a target="_blank" rel="noreferrer" aria-label="resume" href="./assets/files/CV_Utkarsh_Ashok_Tiwari.pdf"
-                class="main-a-1">Here's my CV</a>
-              Or email me: utkarsh[dot]t0298[at]gmail[dot]com
-            </p>
-          </div>
-        </div>
-        <div class="main-div-4">
-          <div class="main-div-5">
-            <img height="100px" width="100px" loading="lazy" class="main-img-1"
-              src="./assets/images/utkarsh-tiwari-photo.jpeg" alt="utkarsh-tiwari-photo">
-          </div>
-        </div>
-      </div>
-    </main>
-    <!-- Main Headline End -->
-
-
-    <!-- Skills Section -->
-    <section class="skills">
-      <h2 class="skills-h2-1">Skills</h2>
-      <div class="skills-div-1">
-
-        <div class="skills-div-2">
-          <h3 class="skills-h3-1">Languages</h3>
-          <ul class="skills-ul">
-            <li>&nbsp;HTML5 &amp; CSS3</li>
-            <li>&nbsp;Javascript</li>
-            <li>&nbsp;Python</li>
-            <li>&nbsp;Java</li>
-            <li>&nbsp;Database - MySQL, PostgreSQL, MongoDB, GoogleSheets</li>
-          </ul>
-        </div>
-
-        <div class="skills-div-2">
-          <h3 class="skills-h3-1">Frameworks</h3>
-          <ul class="skills-ul">
-            <li>&nbsp;Frontend - React.js, Next.js</li>
-            <li>&nbsp;CSS Libraries &amp; Frameworks - Tailwind CSS, Bootstrap, Daisy UI, Reactstrap</li>
-            <li>&nbsp;Backend - Express (Node.js), Springboot (in-progress), Flask (starting soon)</li>
-          </ul>
-        </div>
-
-        <div class="skills-div-2">
-          <h3 class="skills-h3-1">Tools &amp; Tinkering</h3>
-          <ul class="skills-ul">
-            <li>&nbsp;Version Control - Git &amp; GitHub</li>
-            <li>&nbsp;UI Design - Figma, Balsamiq</li>
-            <li>&nbsp;Office - Microsoft Office Suite, Google Office Suite</li>
-            <li>&nbsp;Microcontroller - Arduino, RaspberryPi, ESP8266, <a class="projects-a" target="_blank"
-                rel="noreferrer" href="https://www.hackster.io/_utk09">hackster.io
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skills-div-2">
-          <h3 class="skills-h3-1">Miscellaneous</h3>
-          <ul class="skills-ul">
-            <li>&nbsp;Data Analysis &amp; Visualisation</li>
-            <li>&nbsp;Youtuber - TuplesEdu channel on YT</li>
-            <li>&nbsp;Public Speaking &amp; Leadership</li>
-            <li>&nbsp;Volunteering</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-    <!-- Skills Section End -->
-
-    <!-- Experience Section -->
-    <section class="experience">
-      <h2 class="experience-h2-1">Experience</h2>
-      <div class="experience-div-1">
-
-        <div class="experience-div-2">
-          <h3 class="experience-h3-1">Technical Program Associate (May 2022 - Present)</h3>
-          <h4 class="experience-h4-1">Major League Hacking (MLH), Remote US</h4>
-          <ul class="experience-ul">
-            <li>&nbsp;Led a team of 15 interns, acted as primary technical escalation point.</li>
-            <li>&nbsp;Collaborated on Open Source Projects: Solana Bounty Program (using Next.js), Solana Wallet-Based
-              Whitelisting Program
-              (using Rust & Anchor).</li>
-            <li>&nbsp;Facilitated agile practices, standups, data tracking and aggregate team reporting.</li>
-            <li>&nbsp;Built a website for the team using React.js, TailwindCSS (DaisyUI), hosted on Netlify: <span>
-                <a class="projects-a" target="_blank" rel="noreferrer" href="https://solana-sharks-mlh.netlify.app/">
-                  solana-sharks-mlh.netlify.app
-                </a>
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="experience-div-2">
-          <h3 class="experience-h3-1">Software Development Engineer (Aug 2019 - Aug 2021)</h3>
-          <h4 class="experience-h4-1">Jio Platforms Limited, Mumbai, India</h4>
-          <ul class="experience-ul">
-            <li>&nbsp;Was a part of the Jio Analytics COE Data Engineering Team.</li>
-            <li>&nbsp;Learnt and experimented with big data tools like Hadoop, Kafka, NiFi, Spark, and Zoom Data.</li>
-            <li>&nbsp;Formulated a data pipeline for the merchant acquiring portal of Jio Payments Bank.</li>
-            <li>&nbsp;Started an informative technical seminar session called Brown Bag Fridays.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- Experience Section End -->
-
-    <!-- Projects Section -->
-    <section class="projects">
-      <h2 class="projects-h2-1">Projects</h2>
-      <div class="projects-div-1">
-
-        <div class="projects-div-2">
-          <h3 class="projects-h3-1">Abordo</h3>
-          <ul class="projects-ul">
-            <li>Created a web application to showcase itinerary of travel from 2 bus stations to 4 different
-              castles.</li>
-            <li>Built the project as a part of MSc Curriculum. The website can be found on -
-              <a class="projects-a" target="_blank" rel="noreferrer" href="https://abordo.netlify.app/">
-                abordo.netlify.app
-              </a>
-            </li>
-            <li>Developed the project using Express, React.js, & MongoDB.</li>
-          </ul>
-        </div>
-
-        <div class="projects-div-2">
-          <h3 class="projects-h3-1">Leo District 3231 A1</h3>
-          <ul class="projects-ul">
-            <li>Website for the social service organisation in which I volunteer.</li>
-            <li>Website URL -
-              <a class="projects-a" target="_blank" rel="noreferrer" href="https://leodistrict3231a1.com/">
-                leodistrict3231a1.com
-              </a>
-            <li>Technologies used: React, DaisyUI(TailwindCSS), Google Sheets as the database, Google Analytics.
-            </li>
-          </ul>
-        </div>
-
-        <div class="projects-div-2">
-          <h3 class="projects-h3-1">MTOA</h3>
-          <ul class="projects-ul">
-            <li>Static website for Maharashtra Tour Organisers' Association.</li>
-            <li>Visit it here -
-              <a class="projects-a" target="_blank" rel="noreferrer" href="https://mtoa.co.in/">
-                mtoa.co.in</a>
-              Uses Google Analytics.
-            </li>
-          </ul>
-        </div>
-
-        <div class="projects-div-2">
-          <h3 class="projects-h3-1">Portfolio Website(s)</h3>
-          <ul class="projects-ul">
-            <li>Have an old react.js version of my portfolio -
-              <a class="projects-a" target="_blank" rel="noreferrer"
-                href="https://utkarsh-tiwari-portfolio-react.netlify.app">
-                utkarsh-tiwari-portfolio-react.netlify.app
-              </a>
-            </li>
-            <li>Built my sister's portfolio website -
-              <a class="projects-a" target="_blank" rel="noreferrer" href="https://akai28.github.io">
-                akai28.github.io
-              </a>
-            </li>
-            <li>Designed a portfolio website for a colleague -
-              <a class="projects-a" target="_blank" rel="noreferrer" href="https://shahpreetk.github.io">
-                shahpreetk.github.io</a>
-              Uses Panelbear for analytics.
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-    <!-- Projects Section End -->
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-div-1">
-        <p class="footer-p-1">
-          &copy; 2022 Utkarsh Tiwari.
-          Have an opportunity?
-          <a target="_blank" rel="noreferrer" aria-label="resume" href="./assets/files/CV_Utkarsh_Ashok_Tiwari.pdf"
-            class="main-a-1">Here's my CV, again</a> 😄
+  <body>
+    <div class="container">
+      <!-- Main Headline -->
+      <main>
+        <p class="p-headline">
+          "If you get to a certain achievement/platform, it's your unsaid duty
+          to help others reach the same level in lesser time." ~Anonymous
         </p>
-      </div>
-    </footer>
-    <!-- Footer End -->
-  </div>
 
-</body>
+        <div class="main-div-1">
+          <div class="main-div-2">
+            <h1>
+              <span class="main-h1-span-1">
+                Frontend Developer | Data Engineer | Aspiring Fullstack
+                Developer
+              </span>
+            </h1>
+            <h1>
+              <span class="main-h1-span-2">
+                <span class="main-h1-span-3">Utkarsh </span>
+                <span class="main-h1-span-4">Tiwari</span>
+                <span class="main-h1-span-3">(UT)</span>
+              </span>
+            </h1>
+            <p class="main-p-1">
+              Self-taught MERN stack web developer and Data Engineer with a
+              proven track record of success at Reliance Jio Platforms, India.
+              Graduated with a distinction in MSc. Computer Science from
+              Newcastle University. Currently working as a Software Engineer in
+              London and serving as an MLH Coach and Technical Program
+              Associate. My diverse background and passion for technology make
+              me well-suited for tackling complex challenges and delivering
+              innovative solutions.
+            </p>
+            <div class="main-div-3">
+              <p class="main-p-2">
+                Connect with me on:
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="social-media-account"
+                  href="https://github.com/utk09"
+                  class="main-a-1"
+                  >GitHub</a
+                >,
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="social-media-account"
+                  href="https://www.linkedin.com/in/utkarsh09/"
+                  class="main-a-1"
+                >
+                  LinkedIn</a
+                >,
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="social-media-account"
+                  href="https://twitter.com/utk0909"
+                  class="main-a-1"
+                >
+                  Twitter</a
+                >.
+              </p>
+              <p class="main-p-2">
+                Have an opportunity?
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="resume"
+                  href="./assets/files/CV_Utkarsh_Ashok_Tiwari.pdf"
+                  class="main-a-1"
+                  >Here's my CV</a
+                >
+                Or email me: utkarsh[dot]t0298[at]gmail[dot]com
+              </p>
+            </div>
+          </div>
+          <div class="main-div-4">
+            <div class="main-div-5">
+              <img
+                height="100px"
+                width="100px"
+                loading="lazy"
+                class="main-img-1"
+                src="./assets/images/utkarsh-tiwari-photo.jpeg"
+                alt="utkarsh-tiwari-photo"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Main Headline End -->
 
+      <!-- Skills Section -->
+      <section class="skills">
+        <h2 class="skills-h2-1">Skills</h2>
+        <div class="skills-div-1">
+          <div class="skills-div-2">
+            <h3 class="skills-h3-1">Languages</h3>
+            <ul class="skills-ul">
+              <li>&nbsp;HTML5 &amp; CSS3</li>
+              <li>&nbsp;JavaScript | TypeScript</li>
+              <li>&nbsp;Python</li>
+              <li>&nbsp;Java</li>
+              <li>&nbsp;Database - MongoDB, MySQL, PostgreSQL</li>
+            </ul>
+          </div>
+
+          <div class="skills-div-2">
+            <h3 class="skills-h3-1">Frameworks</h3>
+            <ul class="skills-ul">
+              <li>&nbsp;Frontend - React.js, Next.js</li>
+              <li>
+                &nbsp;Styling - Tailwind CSS, Bootstrap, Daisy UI, Reactstrap
+              </li>
+              <li>
+                &nbsp;Backend - Express.js (Node.js), SpringBoot (in-progress)
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-div-2">
+            <h3 class="skills-h3-1">Tools &amp; Tinkering</h3>
+            <ul class="skills-ul">
+              <li>&nbsp;Version Control - Git &amp; GitHub</li>
+              <li>&nbsp;UI Design - Figma, Balsamiq</li>
+              <li>
+                &nbsp;Office - Microsoft Office Suite, Google Office Suite
+              </li>
+              <li>
+                &nbsp;Microcontroller - Arduino, RaspberryPi, ESP8266,
+                <a
+                  class="projects-a"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.hackster.io/_utk09"
+                  >(hackster.io)
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-div-2">
+            <h3 class="skills-h3-1">Miscellaneous</h3>
+            <ul class="skills-ul">
+              <li>&nbsp;Data Analysis &amp; Visualisation</li>
+              <li>
+                &nbsp;Youtuber -
+                <a
+                  class="projects-a"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.youtube.com/@TuplesEdu"
+                  >TuplesEdu</a
+                >
+                channel on YT
+              </li>
+              <li>&nbsp;Public Speaking &amp; Leadership</li>
+              <li>&nbsp;Volunteering</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section End -->
+
+      <!-- Experience Section -->
+      <section class="experience">
+        <h2 class="experience-h2-1">Experience</h2>
+        <div class="experience-div-1">
+          <div class="experience-div-2">
+            <h3 class="experience-h3-1">
+              Software Engineer (Sep 2022 - Present)
+            </h3>
+            <h4 class="experience-h4-1">London, UK</h4>
+            <ul class="experience-ul">
+              <li>&nbsp;Working as a React Frontend Developer.</li>
+            </ul>
+          </div>
+
+          <div class="experience-div-2">
+            <h3 class="experience-h3-1">Coach (Dec 2022 - Present)</h3>
+            <h4 class="experience-h4-1">
+              Major League Hacking (MLH), Remote US, UK
+            </h4>
+            <ul class="experience-ul">
+              <li>
+                &nbsp;Facilitate Hackathons
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://mlh.io/"
+                  >(mlh.io)</a
+                >
+              </li>
+              <li>&nbsp;Build and nurture vibrant hacker communities.</li>
+              <li>
+                &nbsp;Dedicated to helping students develop the skills and
+                knowledge they need to succeed in the tech industry.
+              </li>
+              <li>
+                &nbsp;A proven track record of providing guidance and support to
+                those interested in pursuing careers in programming and computer
+                science by conducting workshops and seminars.
+                <a
+                  target="_blank"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://youtu.be/xzHv5JUdBDY?t=14"
+                  >(ghw.mlh.io)</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-div-2">
+            <h3 class="experience-h3-1">
+              Technical Program Associate (Oct 2022 - Nov 2022)
+            </h3>
+            <h4 class="experience-h4-1">
+              Major League Hacking (MLH), Remote US
+            </h4>
+            <ul class="experience-ul">
+              <li>
+                &nbsp;Led a cohort of 10 highly motivated individuals in
+                Founder's Fellowship Program.
+              </li>
+              <li>
+                &nbsp;These fellows were eager to build their own startup and
+                were highly engaged in the program.
+              </li>
+              <li>
+                &nbsp;Organised and managed workshops, served as a technical
+                escalation point for the team, providing guidance and support
+                when needed.
+              </li>
+              <li>
+                &nbsp;Facilitated the implementation of agile practices within
+                the team, helping to increase the productivity and
+                effectiveness.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-div-2">
+            <h3 class="experience-h3-1">
+              Technical Program Associate (May 2022 - Aug 2022)
+            </h3>
+            <h4 class="experience-h4-1">
+              Major League Hacking (MLH), Remote US
+            </h4>
+            <ul class="experience-ul">
+              <li>
+                &nbsp;Led a team of 15 interns, acted as primary technical
+                escalation point.
+              </li>
+              <li>
+                &nbsp;Collaborated on Open Source Projects: Solana Bounty
+                Program (using Next.js), Solana Wallet-Based Whitelisting
+                Program (using Rust &amp; Anchor).
+              </li>
+              <li>
+                &nbsp;Facilitated agile practices, standups, data tracking and
+                aggregate team reporting.
+              </li>
+              <li>
+                &nbsp;Built a website for the team using React.js, TailwindCSS
+                (DaisyUI), hosted on Netlify:
+                <span>
+                  <a
+                    class="projects-a"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://solana-sharks-mlh.netlify.app/"
+                  >
+                    solana-sharks-mlh.netlify.app
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-div-2">
+            <h3 class="experience-h3-1">
+              Software Development Engineer (Aug 2019 - Aug 2021)
+            </h3>
+            <h4 class="experience-h4-1">
+              Jio Platforms Limited, Mumbai, India
+            </h4>
+            <ul class="experience-ul">
+              <li>
+                &nbsp;Team member of the Jio Analytics COE Data Engineering
+                Team.
+              </li>
+              <li>
+                &nbsp;Learnt and experimented with big data tools like Hadoop,
+                Kafka, NiFi, Spark, and Zoom Data.
+              </li>
+              <li>
+                &nbsp;Formulated a data pipeline for the merchant acquiring
+                portal of Jio Payments Bank.
+              </li>
+              <li>
+                &nbsp;Started an informative technical seminar session called
+                Brown Bag Fridays.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Experience Section End -->
+
+      <!-- Projects Section -->
+      <section class="projects">
+        <h2 class="projects-h2-1">Projects</h2>
+        <div class="projects-div-1">
+          <div class="projects-div-2">
+            <h3 class="projects-h3-1">MSc. Projects</h3>
+            <ul class="projects-ul">
+              <li>
+                <strong>On-demand Service Provider Platform</strong> &rarr;
+                Created a web application using Node.js, React.js, & MongoDB to
+                connect service providers and customers. Built the project as a
+                part of MSc. Dissertation.
+              </li>
+              <li>
+                <strong>Abordo</strong> &rarr; Created a web application using
+                Express, React.js, & MongoDB to showcase itinerary of travel
+                from 2 bus stations to 4 different castles. Built the project as
+                a part of MSc. Curriculum in a team of 4. The website can be
+                found on -
+                <a
+                  class="projects-a"
+                  target="_blank"
+                  href="https://abordo.netlify.app/"
+                >
+                  abordo.netlify.app
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="projects-div-2">
+            <h3 class="projects-h3-1">Leo District 3231 A1</h3>
+            <ul class="projects-ul">
+              <li>
+                Developed the website of the social service organisation I
+                volunteer for -
+                <a
+                  class="projects-a"
+                  target="_blank"
+                  href="https://leodistrict3231a1.com/"
+                >
+                  leodistrict3231a1.com
+                </a>
+              </li>
+
+              <li>
+                Technologies used: React, DaisyUI (Tailwind CSS), Google Sheets
+                as the database, Google Analytics.
+              </li>
+            </ul>
+          </div>
+
+          <div class="projects-div-2">
+            <h3 class="projects-h3-1">Freelance Projects/Portfolio Websites</h3>
+            <ul class="projects-ul">
+              <li>
+                The old React.js version of my portfolio -
+                <a
+                  class="projects-a"
+                  target="_blank"
+                  href="https://utkarsh-tiwari-portfolio-react.netlify.app"
+                >
+                  utkarsh-tiwari-portfolio-react.netlify.app
+                </a>
+              </li>
+              <li>
+                Built my sister's portfolio website -
+                <a
+                  class="projects-a"
+                  target="_blank"
+                  href="https://akai28.github.io"
+                >
+                  akai28.github.io
+                </a>
+              </li>
+              <li>
+                Developed the website of Maharashtra Tour Organisers'
+                Association -
+                <a
+                  class="projects-a"
+                  target="_blank"
+                  href="https://mtoa.co.in/"
+                >
+                  mtoa.co.in
+                </a>
+                | Uses Google Analytics
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section End -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-div-1">
+          <p class="footer-p-1">
+            &copy; 2023 Utkarsh Tiwari. Have an opportunity?
+            <a
+              target="_blank"
+              rel="noreferrer"
+              aria-label="resume"
+              href="./assets/files/CV_Utkarsh_Ashok_Tiwari.pdf"
+              class="main-a-1"
+              >Here's my CV, again</a
+            >
+            😄
+          </p>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </div>
+  </body>
 </html>
