@@ -13,21 +13,21 @@ function HomepageHeader() {
         </p>
         <div className="py-2 px-6 lg:px-8 max-w-md bg-slate-700 shadow-2xl rounded-full mt-4 mb-8 mx-auto flex justify-between items-center">
           <Link
-            className="text-xl md:text-2xl font-bold text-slate-50 hover:text-emerald-200 dark:text-slate-900"
+            className="text-xl md:text-2xl font-bold text-slate-50 hover:text-emerald-200"
             to="/"
           >
             UT
           </Link>
 
           <Link
-            className="text-slate-50 hover:text-blue-100 dark:text-slate-900 dark:hover:text-blue-100 text-base custom-mono"
+            className="text-slate-50 hover:text-blue-100 dark:hover:text-blue-100 text-base custom-mono"
             to="/blog"
           >
             Blogs
           </Link>
 
           <Link
-            className="text-slate-50 hover:text-blue-100 dark:text-slate-900 dark:hover:text-blue-100 text-base custom-mono"
+            className="text-slate-50 hover:text-blue-100 dark:hover:text-blue-100 text-base custom-mono"
             to="https://github.com/utk09"
           >
             GitHub
