@@ -53,3 +53,20 @@ code,
 .custom-mono {
   font-family: "Fira Mono", monospace;
 }
+
+/* Targeting the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Making scrollbar track background transparent */
+}
+
+/* Targeting the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1); /* Making scrollbar thumb transparent */
+  border-radius: 10px; /* Adding border radius to scrollbar thumb */
+}
+
+/* Customize the scrollbar width and height */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust the width of the scrollbar */
+  height: 10px; /* Adjust the height of the scrollbar for horizontal scroll */
+}
