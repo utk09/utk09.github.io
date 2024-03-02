@@ -49,12 +49,12 @@ const NavbarComponent = () => {
           className="ml-4 cursor-pointer rounded-full border-0 outline-none focus:outline-none bg-slate-700 hover:bg-slate-600 dark:bg-slate-700 dark:hover:bg-slate-600"
         >
           {theme === "light" ? (
-            <MdOutlineDarkMode
+            <MdOutlineLightMode
               className="outline-none text-slate-50"
               size={24}
             />
           ) : (
-            <MdOutlineLightMode
+            <MdOutlineDarkMode
               className="outline-none text-slate-50"
               size={24}
             />
