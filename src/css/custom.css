@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #014f86;
+  --ifm-color-primary-dark: #01497c;
+  --ifm-color-primary-darker: #013a63;
+  --ifm-color-primary-darkest: #012a4a;
+  --ifm-color-primary-light: #468faf;
+  --ifm-color-primary-lighter: #61a5c2;
+  --ifm-color-primary-lightest: #89c2d9;
+  --ifm-background-color: #fffdfe;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #74c69d;
+  --ifm-color-primary-dark: #2d6a4f;
+  --ifm-color-primary-darker: #1b4332;
+  --ifm-color-primary-darkest: #081c15;
+  --ifm-color-primary-light: #95d5b2;
+  --ifm-color-primary-lighter: #b7e4c7;
+  --ifm-color-primary-lightest: #d8f3dc;
+  --ifm-background-color: #0b1215;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
+
+p,
+ul,
+li {
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+}
+
+code,
+.custom-mono {
+  font-family: "Fira Mono", monospace;
+}
+
+/* Targeting the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Making scrollbar track background transparent */
+}
+
+/* Targeting the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1); /* Making scrollbar thumb transparent */
+  border-radius: 10px; /* Adding border radius to scrollbar thumb */
+}
+
+/* Customize the scrollbar width and height */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust the width of the scrollbar */
+  height: 10px; /* Adjust the height of the scrollbar for horizontal scroll */
+}
