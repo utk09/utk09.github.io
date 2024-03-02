@@ -38,10 +38,16 @@ const config = {
           sidebarPath: "./sidebars.js",
           routeBasePath: "/tutorials",
           path: "tutorials",
+          editUrl: ({ docPath }) => {
+            return `https://github.com/utk09/utk09.github.io/edit/main/tutorials/${docPath}`;
+          },
         },
         blog: {
           routeBasePath: "/blogs",
           showReadingTime: true,
+          editUrl: ({ blogDirPath, blogPath }) => {
+            return `https://github.com/utk09/utk09.github.io/edit/main/${blogDirPath}/${blogPath}`;
+          },
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -81,7 +87,7 @@ const config = {
             position: "left",
             label: "Tutorials",
           },
-          { to: "/blogs", label: "Blog", position: "left" },
+          { to: "/blogs", label: "Blogs", position: "left" },
         ],
       },
       footer: {
@@ -95,7 +101,7 @@ const config = {
                 to: "/tutorials",
               },
               {
-                label: "Blog",
+                label: "Blogs",
                 to: "/blogs",
               },
               {

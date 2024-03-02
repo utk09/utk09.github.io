@@ -1,3 +1,5 @@
+// @ts-check
+
 import React from "react";
 import Link from "@docusaurus/Link";
 
@@ -19,18 +21,18 @@ const CustomFooter = () => {
           </div>
           <div className="pb-6">
             <Link
-              to="/blogs"
-              className="text-sm leading-6 text-gray-200 hover:text-gray-400"
-            >
-              Blogs
-            </Link>
-          </div>
-          <div className="pb-6">
-            <Link
               to="/tutorials"
               className="text-sm leading-6 text-gray-200 hover:text-gray-400"
             >
               Tutorials
+            </Link>
+          </div>
+          <div className="pb-6">
+            <Link
+              to="/blogs"
+              className="text-sm leading-6 text-gray-200 hover:text-gray-400"
+            >
+              Blogs
             </Link>
           </div>
         </nav>
