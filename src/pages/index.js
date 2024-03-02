@@ -1,11 +1,10 @@
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import HomepageContent from "@site/src/components/HomepageContent";
-
-import { FaLinkedin } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import CustomFooter from "./CustomFooter";
+import { useEffect, useState } from "react";
 
 const QuoteComponent = () => (
   <p className="custom-mono text-xs my-6 text-center">
@@ -14,30 +13,68 @@ const QuoteComponent = () => (
   </p>
 );
 
-const NavbarComponent = () => (
-  <div className="py-2 px-6 lg:px-8 max-w-md bg-slate-700 shadow-2xl rounded-full mt-4 mb-8 mx-auto flex justify-between items-center">
-    <Link
-      className="text-xl md:text-2xl font-bold text-slate-50 hover:text-slate-200 dark:hover:text-slate-200"
-      to="/"
-    >
-      UT
-    </Link>
-    <div className="flex underline">
+const NavbarComponent = () => {
+  // State to manage the current theme
+  const [theme, setTheme] = useState("light");
+
+  // Effect hook to apply the theme on component mount
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme") || "light";
+    setTheme(storedTheme);
+    document.documentElement.setAttribute("data-theme", storedTheme);
+  }, []);
+
+  // Function to toggle theme and update local storage
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+  };
+
+  return (
+    <div className="py-2 px-6 lg:px-8 max-w-lg bg-slate-700 shadow-2xl rounded-full mt-4 mb-8 mx-auto flex justify-between items-center">
       <Link
-        className="text-slate-50 hover:text-slate-400 dark:hover:text-slate-400 custom-mono ml-4"
-        to="/blog"
+        className="text-xl md:text-2xl font-bold text-slate-50 hover:text-slate-200 dark:hover:text-slate-200"
+        to="/"
       >
-        Blogs
+        UT
       </Link>
-      <Link
-        className="text-slate-50 hover:text-slate-400 dark:hover:text-slate-400 custom-mono ml-4"
-        to="/tutorials"
-      >
-        Tutorials
-      </Link>
+      <div className="flex items-center">
+        <div className="flex underline">
+          <Link
+            className="text-slate-50 hover:text-slate-400 dark:hover:text-slate-400 custom-mono"
+            to="/tutorials"
+          >
+            Tutorials
+          </Link>
+          <Link
+            className="text-slate-50 hover:text-slate-400 dark:hover:text-slate-400 custom-mono ml-4"
+            to="/blogs"
+          >
+            Blogs
+          </Link>
+        </div>
+        <button
+          onClick={toggleTheme}
+          className="ml-4 cursor-pointer rounded-full border-0 outline-none focus:outline-none bg-slate-700 hover:bg-slate-600 dark:bg-slate-700 dark:hover:bg-slate-600"
+        >
+          {theme === "light" ? (
+            <MdOutlineDarkMode
+              className="outline-none text-slate-50"
+              size={24}
+            />
+          ) : (
+            <MdOutlineLightMode
+              className="outline-none text-slate-50"
+              size={24}
+            />
+          )}
+        </button>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const ProfileSection = ({ siteConfig }) => {
   const socialLinksArr = [

@@ -77,7 +77,7 @@ export default function HomepageContent() {
     <div>
       <section className="about-me">
         <p className="leading-6">
-          I am a Software Developer at Citigroup UK, and celebrated as one of
+          I am a Software Developer at Citigroup, UK, and celebrated as one of
           the MLH Top 50 in 2023. Beyond my primary role, I dedicate myself as
           an MLH Coach and Technical Program Associate, fostering growth and
           innovation within the tech community. A proud alumnus of Newcastle
@@ -92,7 +92,8 @@ export default function HomepageContent() {
       <hr className="my-8" />
       <div className="md:grid md:grid-cols-12 gap-2">
         <section className="work-experience md:col-span-6">
-          <ul className="list-none">
+          <h3 className="text-lg font-semibold">Experience & Education</h3>
+          <ul className="list-none ml-0 pl-0">
             {timeline.map((event, eventIdx) => (
               <li key={event.id} className="relative pb-8">
                 {eventIdx !== timeline.length - 1 && (
@@ -138,7 +139,7 @@ export default function HomepageContent() {
                 <h4 className="text-sm font-medium mb-2 custom-mono">
                   {category}
                 </h4>
-                <ul className="list-none flex flex-wrap gap-2">
+                <ul className="list-none flex flex-wrap gap-2 ml-0 pl-0">
                   {skills.map((skill) => (
                     <li
                       key={skill}

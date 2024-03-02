@@ -19,7 +19,7 @@ const CustomFooter = () => {
           </div>
           <div className="pb-6">
             <Link
-              to="/blog"
+              to="/blogs"
               className="text-sm leading-6 text-gray-200 hover:text-gray-400"
             >
               Blogs

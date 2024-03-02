@@ -1,0 +1,39 @@
+---
+sidebar_position: 1
+title: Tutorials
+description: A collection of tutorials authored by Utkarsh Tiwari (UT | utk09).
+authors: [utk09]
+---
+
+import tutorialsData from "./tutorialsData";
+
+As a Software Engineer, I am driven by a passion for exploring and experimenting with technology. This collection of tutorials represents my ongoing learning journey, which I am excited to share with you. I hope you find these resources beneficial.
+
+You are encouraged to adapt the code, experiment with it, and even include it in your Resume/CV. If you have any questions or suggestions, please do not hesitate to connect with me on [Twitter/X](https://twitter.com/utk0909).
+
+## Tutorial Catalog
+
+Below is a list of tutorials I have authored, along with their current status.
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {tutorialsData.map((eachTutorial) => (
+      <tr key={eachTutorial.id}>
+        <td>{eachTutorial.id}</td>
+        <td>
+          <a href={eachTutorial.link}>{eachTutorial.title}</a>
+        </td>
+        <td>{eachTutorial.description}</td>
+        <td>{eachTutorial.status}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>

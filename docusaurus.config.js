@@ -16,6 +16,7 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   onDuplicateRoutes: "warn",
+  trailingSlash: false,
 
   i18n: {
     defaultLocale: "en",
@@ -27,9 +28,19 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false,
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.9,
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
+        },
+        docs: {
+          sidebarPath: "./sidebars.js",
+          routeBasePath: "/tutorials",
+          path: "tutorials",
+        },
         blog: {
-          routeBasePath: "/blog",
+          routeBasePath: "/blogs",
           showReadingTime: true,
         },
         theme: {
@@ -57,32 +68,44 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: "img/logo.png",
-      // navbar: {
-      //   title: "UT",
-      //   logo: {
-      //     alt: "Utkarsh Tiwari (UT) Logo",
-      //     src: "img/logo.png",
-      //   },
-      //   items: [
-      //     {
-      //       type: "docSidebar",
-      //       sidebarId: "aboutSidebar",
-      //       position: "left",
-      //       label: "About",
-      //     },
-      //     { to: "/blog", label: "Blog", position: "left" },
-      //     {
-      //       href: "https://github.com/utk09",
-      //       label: "GitHub",
-      //       position: "right",
-      //     },
-      //   ],
-      // },
+      navbar: {
+        title: "UT",
+        logo: {
+          alt: "Utkarsh Tiwari (UT) Logo",
+          src: "img/logo.png",
+        },
+        items: [
+          {
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Tutorials",
+          },
+          { to: "/blogs", label: "Blog", position: "left" },
+        ],
+      },
       footer: {
         style: "dark",
         links: [
           {
-            title: "Community",
+            title: "About",
+            items: [
+              {
+                label: "Tutorials",
+                to: "/tutorials",
+              },
+              {
+                label: "Blog",
+                to: "/blogs",
+              },
+              {
+                label: "Resume",
+                to: "/resume",
+              },
+            ],
+          },
+          {
+            title: "Social",
             items: [
               {
                 label: "LinkedIn",
@@ -92,23 +115,14 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/utk0909",
               },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/utk09",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Utkarsh Tiwari (UT | utk09). Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Utkarsh Tiwari (UT | utk09). Built with &hearts; using Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
