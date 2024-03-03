@@ -76,6 +76,26 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        {
+          name: "description",
+          content:
+            "Frontend Developer | Blogger | Major League Hacking (MLH) Coach | Data Engineer | YouTuber @TuplesEdu | MLH Technical Program Associate | Software Engineer",
+        },
+        {
+          name: "keywords",
+          content:
+            "utkarsh tiwari, UT, utk09, TuplesEdu, Major League Hacking, MLH, youtuber, frontend development, data engineering, software engineering, tech blogging, technology, lifelong learning",
+        },
+        {
+          name: "author",
+          content: "Utkarsh Tiwari (UT | utk09)",
+        },
+        {
+          name: "robots",
+          content: "index, follow",
+        },
+      ],
       colorMode: {
         defaultMode: "dark",
       },
