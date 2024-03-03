@@ -6,7 +6,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Utkarsh Tiwari (UT | utk09)",
   tagline: "FRONTEND DEVELOPER | DATA ENGINEER | ASPIRING FULLSTACK DEVELOPER",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.ico?v=4",
   url: "https://utk09.com",
   baseUrl: "/",
 
@@ -76,12 +76,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/logo.png",
+      colorMode: {
+        defaultMode: "dark",
+      },
+      image: "img/logo.png?v=4",
       navbar: {
         title: "UT",
         logo: {
           alt: "Utkarsh Tiwari (UT) Logo",
-          src: "img/logo.png",
+          src: "img/logo.png?v=4",
         },
         items: [
           {
@@ -94,7 +97,7 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
+        style: "light",
         links: [
           {
             title: "About",
@@ -127,6 +130,19 @@ const config = {
               {
                 label: "GitHub",
                 href: "https://github.com/utk09",
+              },
+            ],
+          },
+          {
+            title: "External",
+            items: [
+              {
+                label: "Dev.to",
+                href: "https://dev.to/utk09",
+              },
+              {
+                label: "Medium",
+                href: "https://medium.com/@utk09",
               },
             ],
           },
