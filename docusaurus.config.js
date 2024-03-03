@@ -34,6 +34,9 @@ const config = {
           ignorePatterns: ["/tags/**"],
           filename: "sitemap.xml",
         },
+        gtag: {
+          trackingID: ["G-67H9CP0Z8Q", "G-H98RBFSDQ5"],
+        },
         docs: {
           sidebarPath: "./sidebars.js",
           routeBasePath: "/tutorials",

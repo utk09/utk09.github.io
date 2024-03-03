@@ -40,6 +40,13 @@ const CustomFooter = () => {
           &copy; {new Date().getFullYear()} Utkarsh Tiwari. Made with &hearts;
           using Docusaurus.
         </p>
+        <p className="mt-10 text-center text-xs leading-5 text-slate-500">
+          This website uses{" "}
+          <a href="https://marketingplatform.google.com/intl/en_uk/about/analytics/">
+            Google Analytics
+          </a>{" "}
+          to track user engagement.
+        </p>
       </div>
     </footer>
   );
