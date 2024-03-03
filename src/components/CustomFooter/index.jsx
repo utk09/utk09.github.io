@@ -37,14 +37,6 @@ const CustomFooter = () => {
           </div>
           <div className="pb-6">
             <Link
-              to="/blogs"
-              className="text-sm leading-6 text-gray-200 hover:text-gray-400"
-            >
-              Blogs
-            </Link>
-          </div>
-          <div className="pb-6">
-            <Link
               to="https://dev.to/utk09"
               className="text-sm leading-6 text-gray-200 hover:text-gray-400"
             >
