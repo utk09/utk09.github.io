@@ -4,11 +4,11 @@ import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 
 const NavbarComponent = () => {
   // State to manage the current theme
-  const [theme, setTheme] = React.useState("light");
+  const [theme, setTheme] = React.useState("dark");
 
   // Effect hook to apply the theme on component mount
   React.useEffect(() => {
-    const storedTheme = localStorage.getItem("theme") || "light";
+    const storedTheme = localStorage.getItem("theme") || "dark";
     setTheme(storedTheme);
     document.documentElement.setAttribute("data-theme", storedTheme);
   }, []);
