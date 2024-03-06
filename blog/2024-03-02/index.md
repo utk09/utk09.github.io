@@ -38,9 +38,11 @@ Direct dependencies (or devDependencies) are the packages that your project dire
 
 4. **Automate Security Checks:** Incorporate vulnerability checks into your CI/CD pipeline by using `npm audit` or `yarn audit` and configure the pipeline to fail if vulnerabilities are detected. Additionally, tools like `npm audit fix` or `yarn audit fix` can be employed to automatically correct vulnerabilities, streamlining the maintenance of your project's security.
 
-![npm audit](./npm-audit.png "npm audit")
+| ![npm audit](./npm-audit.png "npm audit") |
+| ----------------------------------------- |
 
-![npm audit fix --force](./npm-audit-fix-force.png "npm audit fix --force")
+| ![npm audit fix --force](./npm-audit-fix-force.png "npm audit fix --force") |
+| --------------------------------------------------------------------------- |
 
 ## Resolving Vulnerabilities in Indirect Dependencies
 
@@ -87,9 +89,11 @@ npm ci
 
 This specific command ensures that your project installs dependencies exactly as defined in your `package-lock.json`, applying the overrides as intended and maintaining consistency across environments.
 
-![npm ls semver](./npm-ls-semver.png "npm ls semver")
+| ![npm ls semver](./npm-ls-semver.png "npm ls semver") |
+| ----------------------------------------------------- |
 
-![adding overrides](./adding-overrides.png "adding overrides")
+| ![adding overrides](./adding-overrides.png "adding overrides") |
+| -------------------------------------------------------------- |
 
 **It's crucial to thoroughly test your application after making these changes to ensure everything works correctly and the vulnerabilities are resolved.**
 

@@ -40,6 +40,7 @@ const config = {
         docs: {
           sidebarPath: "./sidebars.js",
           routeBasePath: "/tutorials",
+          sidebarCollapsible: true,
           path: "tutorials",
           editUrl: ({ docPath }) => {
             return `https://github.com/utk09/utk09.github.io/edit/main/tutorials/${docPath}`;
@@ -48,6 +49,8 @@ const config = {
         blog: {
           routeBasePath: "/blogs",
           showReadingTime: true,
+          postsPerPage: 5,
+          blogSidebarCount: 0,
           editUrl: ({ blogDirPath, blogPath }) => {
             return `https://github.com/utk09/utk09.github.io/edit/main/${blogDirPath}/${blogPath}`;
           },
@@ -73,8 +76,8 @@ const config = {
     },
   ],
 
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
         {
@@ -168,6 +171,11 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Utkarsh Tiwari (UT | utk09). Built with &hearts; using Docusaurus.`,
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        }
       },
       prism: {
         theme: prismThemes.github,
