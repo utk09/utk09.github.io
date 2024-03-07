@@ -32,13 +32,13 @@ const NavbarComponent = () => {
       <div className="flex items-center">
         <div className="flex underline">
           <Link
-            className="text-slate-50 hover:text-slate-400 dark:hover:text-slate-400 custom-mono"
+            className="text-xs md:text-base text-slate-50 hover:text-slate-400 dark:hover:text-slate-400 custom-mono"
             to="/tutorials"
           >
             Tutorials
           </Link>
           <Link
-            className="text-slate-50 hover:text-slate-400 dark:hover:text-slate-400 custom-mono ml-4"
+            className="text-xs md:text-base text-slate-50 hover:text-slate-400 dark:hover:text-slate-400 custom-mono ml-4"
             to="/blogs"
           >
             Blogs

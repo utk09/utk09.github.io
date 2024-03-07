@@ -27,6 +27,7 @@ const ProfileSection = ({ siteConfig }) => {
         <img
           className="w-72 h-72 mx-auto"
           src="img/ut_portrait_image.png"
+          loading="lazy"
           alt="Utkarsh Tiwari (UT)"
         />
       </div>
@@ -42,14 +43,14 @@ const ProfileSection = ({ siteConfig }) => {
               href={socialLink.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-200 hover:text-slate-400"
+              className="text-slate-900 dark:text-slate-200 hover:text-slate-500"
             >
               {socialLink.icon}
             </a>
           ))}
           <Link
             to="/resume"
-            className="text-slate-200 hover:text-slate-200 text-xl custom-mono"
+            className="text-slate-900 dark:text-slate-200 hover:text-slate-500 text-xl custom-mono"
           >
             Resume
           </Link>

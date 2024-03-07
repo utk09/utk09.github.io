@@ -1,9 +1,9 @@
 // @ts-check
 
 import React from "react";
-import { skills, timeline } from "./constants";
 import WorkExperience from "./WorkExperience";
 import Skills from "./Skills";
+import CustomForm from "./CustomForm";
 
 export default function HomepageContent() {
   return (
@@ -35,6 +35,8 @@ export default function HomepageContent() {
           <Skills />
         </section>
       </div>
+      <hr className="my-8" />
+      <CustomForm />
     </div>
   );
 }
