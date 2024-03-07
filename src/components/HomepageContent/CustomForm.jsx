@@ -1,11 +1,46 @@
-// @ts-check
 import React from "react";
 
 const CustomForm = () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent default form submission
+    const formData = new FormData(event.target); // 'event.target' is the form
+
+    const formJSON = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formJSON).toString(),
+      });
+
+      // Handle response...
+      if (response.ok) {
+        alert("Form submitted successfully");
+        // Redirect or show a success message
+        window.location.href = "/"; // success route
+      } else {
+        // Show an error message
+        alert("Form submission failed");
+      }
+    } catch (error) {
+      // Handle error...
+      console.error("Form submission error:", error);
+      alert("Form submission error");
+    }
+  };
+
   return (
     <div>
-      <form className="pb-12" name="contact" method="post" data-netlify="true">
+      <form
+        className="pb-12"
+        name="contact"
+        method="post"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+      >
         <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
         <p className="mt-1 text-base">
           Interested in updates? Subscribe to the newsletter. Privacy respected,
           unsubscribe anytime.
