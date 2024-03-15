@@ -1,12 +1,46 @@
 import React from "react";
 
 const CustomForm = () => {
+  // Function to handle form submission
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission
     const formData = new FormData(event.target); // 'event.target' is the form
 
-    const formJSON = Object.fromEntries(formData.entries());
+    let isValid = true; // Flag to track validation status
 
+    // Convert form data to JSON, trim values, and ensure the fields are not empty
+    const formJSON = {};
+    formData.forEach((value, key) => {
+      const trimmedValue = value.trim();
+      formJSON[key] = trimmedValue; // Store the trimmed value
+
+      // Check fields are not empty
+      if (!trimmedValue && isValid) {
+        alert("Please fill in all fields");
+        isValid = false;
+        return;
+      }
+
+      // Check email is valid
+      if (key === "email" && !trimmedValue.includes("@") && isValid) {
+        alert("Please enter a valid email address");
+        isValid = false;
+        return;
+      }
+
+      // Check name is valid
+      if (key === "given-name" && trimmedValue.length < 3 && isValid) {
+        alert("Please enter a valid name");
+        isValid = false;
+        return;
+      }
+    });
+
+    if (!isValid) {
+      return; // Stop form submission if validation failed
+    }
+
+    // Submit the form
     try {
       const response = await fetch("/", {
         method: "POST",
