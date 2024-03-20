@@ -16,9 +16,17 @@ Electoral bonds are like special coupons used for donating money to political pa
 
 Recently, India's Supreme Court decided to let everyone know details about these electoral bonds. So, I wanted to look into this data and see what's happening with these donations.
 
-## Data
+## Getting the Data
 
 The data is obtained from the [Election Commision of India](https://www.eci.gov.in/disclosure-of-electoral-bonds) website. The data is available in the form of PDFs.
+
+| ![purchaser data](./purchaser_data_pdf.png "purchaser data") |
+| ------------------------------------------------------------ |
+
+| ![encashment data](./encashment_data_pdf.png "encashment data") |
+| --------------------------------------------------------------- |
+
+The PDF's are also available in the [pdf_data](https://github.com/utk09/electoral-bonds-data-analysis/tree/main/pdf_data) folder on my GitHub repository.
 
 ## PDF to CSV challenge
 
@@ -29,7 +37,7 @@ Because the data was in PDFs, which are hard to work with, I used Python [PyPDF2
 
 In this project, the main task was to sort out data from electoral bonds that were all mixed up without clear separation between different pieces of information. The data didn't have usual separators like commas or new lines to tell where one piece of data ended and the next one began.
 
-The solution came from noticing patterns in the data: it started with `dates` and ended with money amounts (like 1,000, 10,000, 1,00,000), which always had `000` at the end. Here's how the sorting was done:
+The solution came from noticing patterns in the data: it started with `dates` and ended with money amounts (like `1,000`, `10,000`, `1,00,000`), which always had `000` at the end. Here's how the sorting was done:
 
 1. **Extracting Text:** First, the text was taken out and put into a list. This text was usually one record for each page of the PDF.
 
@@ -66,7 +74,7 @@ In this analysis, I focussed on the purchase and encashment patterns of Electora
 
 The approach employed for this analysis utilizes Python and libraries like Pandas, Streamlit, and Plotly to process, analyze, and visualize the data. Streamlit was chosen for its ability to quickly create interactive web apps, allowing for a more engaging presentation of the findings. Plotly, on the other hand, adds an interactive dimension to the data visualizations, making the exploration of trends more intuitive.
 
-## Screenshots of the visualizations
+### Screenshots of the visualizations
 
 | ![purchaser details 1](./purchaser_details_1.png "purchaser details 1") |
 | ----------------------------------------------------------------------- |
