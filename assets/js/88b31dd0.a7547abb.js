@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkutk09_github_io=self.webpackChunkutk09_github_io||[]).push([[9433],{5972:t=>{t.exports=JSON.parse('{"permalink":"/blogs/tags/react","page":1,"postsPerPage":5,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

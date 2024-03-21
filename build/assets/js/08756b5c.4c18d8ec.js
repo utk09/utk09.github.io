@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkutk09_github_io=self.webpackChunkutk09_github_io||[]).push([[5731],{3946:t=>{t.exports=JSON.parse('{"permalink":"/blogs/tags/front-end","page":1,"postsPerPage":5,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

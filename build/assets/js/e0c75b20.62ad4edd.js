@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkutk09_github_io=self.webpackChunkutk09_github_io||[]).push([[5957],{869:a=>{a.exports=JSON.parse('{"label":"angular","permalink":"/blogs/tags/angular","allTagsPath":"/blogs/tags","count":1,"unlisted":false}')}}]);

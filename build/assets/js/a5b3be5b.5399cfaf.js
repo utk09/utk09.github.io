@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkutk09_github_io=self.webpackChunkutk09_github_io||[]).push([[2862],{7651:s=>{s.exports=JSON.parse('{"label":"vue","permalink":"/blogs/tags/vue","allTagsPath":"/blogs/tags","count":1,"unlisted":false}')}}]);

@@ -1,0 +1,318 @@
+{
+  "/blogs-843": {
+    "__comp": "a6aa9e1f",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "41ee9ed2"
+      },
+      {
+        "content": "7278acee"
+      }
+    ],
+    "metadata": "f17a645b"
+  },
+  "/blogs/archive-723": {
+    "__comp": "9e4087bc",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "archive": "16029c63"
+  },
+  "/blogs/electoral-bonds-analysis-e9f": {
+    "__comp": "ccc49370",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "content": "0cb2590e"
+  },
+  "/blogs/resolve-vulnerabilities-in-frontend-apps-771": {
+    "__comp": "ccc49370",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "content": "628da43c"
+  },
+  "/blogs/tags-73b": {
+    "__comp": "01a85c17",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "tags": "708daa68"
+  },
+  "/blogs/tags/angular-54f": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7278acee"
+      }
+    ],
+    "tag": "e0c75b20",
+    "listMetadata": "f9607e6e"
+  },
+  "/blogs/tags/data-analysis-ee8": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "41ee9ed2"
+      }
+    ],
+    "tag": "f0dcc8d6",
+    "listMetadata": "3d969895"
+  },
+  "/blogs/tags/data-visualization-e7b": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "41ee9ed2"
+      }
+    ],
+    "tag": "16ba9518",
+    "listMetadata": "c5e53691"
+  },
+  "/blogs/tags/electoral-bonds-9e2": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "41ee9ed2"
+      }
+    ],
+    "tag": "41210c31",
+    "listMetadata": "77093447"
+  },
+  "/blogs/tags/front-end-100": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7278acee"
+      }
+    ],
+    "tag": "359b0d6a",
+    "listMetadata": "08756b5c"
+  },
+  "/blogs/tags/libraries-55d": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7278acee"
+      }
+    ],
+    "tag": "0cf94a86",
+    "listMetadata": "b56dba91"
+  },
+  "/blogs/tags/npm-053": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7278acee"
+      }
+    ],
+    "tag": "7f10b0b4",
+    "listMetadata": "cfe4bad2"
+  },
+  "/blogs/tags/package-json-d52": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7278acee"
+      }
+    ],
+    "tag": "7c20c8d8",
+    "listMetadata": "573c6d10"
+  },
+  "/blogs/tags/python-234": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "41ee9ed2"
+      }
+    ],
+    "tag": "7a3cbbc1",
+    "listMetadata": "91958274"
+  },
+  "/blogs/tags/react-8a6": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7278acee"
+      }
+    ],
+    "tag": "d040749d",
+    "listMetadata": "88b31dd0"
+  },
+  "/blogs/tags/security-8d7": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7278acee"
+      }
+    ],
+    "tag": "b0851ee2",
+    "listMetadata": "a3ee450e"
+  },
+  "/blogs/tags/streamlit-550": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "41ee9ed2"
+      }
+    ],
+    "tag": "a78f5e77",
+    "listMetadata": "eb85fa8d"
+  },
+  "/blogs/tags/vue-da7": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7278acee"
+      }
+    ],
+    "tag": "a5b3be5b",
+    "listMetadata": "a0c86f73"
+  },
+  "/blogs/tags/vulnerabilities-9af": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7278acee"
+      }
+    ],
+    "tag": "72126761",
+    "listMetadata": "b89f8be1"
+  },
+  "/blogs/tags/yarn-8f4": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "37de7346"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7278acee"
+      }
+    ],
+    "tag": "767ef833",
+    "listMetadata": "4b3a7f7f"
+  },
+  "/resume-be6": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "cf12bcce"
+    },
+    "content": "df377a91"
+  },
+  "/tutorials-94d": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "e948eaba"
+    }
+  },
+  "/tutorials-6de": {
+    "__comp": "a7bd4aaa",
+    "version": "935f2afb"
+  },
+  "/tutorials/tags-83b": {
+    "__comp": "3720c009",
+    "tags": "55960ee5"
+  },
+  "/tutorials/tags/data-cleaning-659": {
+    "__comp": "df203c0f",
+    "tag": "42a2ab84"
+  },
+  "/tutorials/tags/data-collection-99e": {
+    "__comp": "df203c0f",
+    "tag": "929c751e"
+  },
+  "/tutorials/tags/data-science-1b0": {
+    "__comp": "df203c0f",
+    "tag": "631ac502"
+  },
+  "/tutorials/tags/python-78c": {
+    "__comp": "df203c0f",
+    "tag": "86ae7108"
+  },
+  "/tutorials/tags/web-scraping-aff": {
+    "__comp": "df203c0f",
+    "tag": "09885e38"
+  },
+  "/tutorials-364": {
+    "__comp": "a94703ab"
+  },
+  "/tutorials-935": {
+    "__comp": "17896441",
+    "content": "8f30deb2"
+  },
+  "/tutorials/data-science/data-science-part-1-getting-the-data-fb4": {
+    "__comp": "17896441",
+    "content": "9c00ad05"
+  },
+  "/-797": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "cf12bcce"
+    },
+    "config": "5e9f5e1a"
+  }
+}

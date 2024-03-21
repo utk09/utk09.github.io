@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkutk09_github_io=self.webpackChunkutk09_github_io||[]).push([[1522],{2815:s=>{s.exports=JSON.parse('{"label":"electoral-bonds","permalink":"/blogs/tags/electoral-bonds","allTagsPath":"/blogs/tags","count":1,"unlisted":false}')}}]);

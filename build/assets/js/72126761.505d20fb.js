@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkutk09_github_io=self.webpackChunkutk09_github_io||[]).push([[5167],{787:s=>{s.exports=JSON.parse('{"label":"vulnerabilities","permalink":"/blogs/tags/vulnerabilities","allTagsPath":"/blogs/tags","count":1,"unlisted":false}')}}]);

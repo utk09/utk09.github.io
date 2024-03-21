@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkutk09_github_io=self.webpackChunkutk09_github_io||[]).push([[7369],{4066:s=>{s.exports=JSON.parse('{"label":"python","permalink":"/blogs/tags/python","allTagsPath":"/blogs/tags","count":1,"unlisted":false}')}}]);

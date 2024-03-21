@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkutk09_github_io=self.webpackChunkutk09_github_io||[]).push([[2229],{3862:s=>{s.exports=JSON.parse('{"label":"streamlit","permalink":"/blogs/tags/streamlit","allTagsPath":"/blogs/tags","count":1,"unlisted":false}')}}]);
