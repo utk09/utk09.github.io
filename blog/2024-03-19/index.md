@@ -93,7 +93,7 @@ The approach employed for this analysis utilizes Python and libraries like Panda
 
 ## Hosted Application
 
-I made a Streamlit app where you can interact with the data: [https://electoral-bonds-data-analysis.streamlit.app/](https://electoral-bonds-data-analysis.streamlit.app/)
+I made a Streamlit app where you can interact with the data: **[https://electoral-bonds-data-analysis.streamlit.app/](https://electoral-bonds-data-analysis.streamlit.app/)**
 
 ## Conclusion
 
