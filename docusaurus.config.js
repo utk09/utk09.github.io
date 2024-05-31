@@ -133,10 +133,10 @@ const config = {
                 label: "Blogs",
                 to: "/blogs",
               },
-              // {
-              //   label: "Resume",
-              //   to: "/resume",
-              // },
+              {
+                label: "Resume",
+                to: "/resume",
+              },
             ],
           },
           {

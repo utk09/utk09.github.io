@@ -48,12 +48,12 @@ const ProfileSection = ({ siteConfig }) => {
               {socialLink.icon}
             </a>
           ))}
-          {/* <Link
+          <Link
             to="/resume"
             className="text-slate-900 dark:text-slate-200 hover:text-slate-500 text-xl custom-mono"
           >
             Resume
-          </Link> */}
+          </Link>
         </div>
         <p className="text-sm mt-4">
           Email me: utkarsh[dot]t0298[at]gmail[dot]com
