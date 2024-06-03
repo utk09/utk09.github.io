@@ -4,13 +4,22 @@ import { MdOutlineWorkHistory } from "react-icons/md";
 
 export const TIMELINE = [
   {
+    id: 7,
+    content: "AVP FX UI Developer at",
+    target: "Barclays UK",
+    href: "https://home.barclays/",
+    date: "Jun 2024 - Present",
+    icon: HiOutlineBriefcase,
+    iconBackground: "bg-teal-300",
+  },
+  {
     id: 6,
     content: "Software Developer at",
     target: "Citigroup UK",
     href: "https://www.citigroup.com/global",
-    date: "Sep 2022 - Present",
+    date: "Sep 2022 - May 2024",
     icon: HiOutlineBriefcase,
-    iconBackground: "bg-blue-300",
+    iconBackground: "bg-yellow-300",
   },
   {
     id: 5,
@@ -28,7 +37,7 @@ export const TIMELINE = [
     href: "https://mlh.io/",
     date: "May 2022 - Mar 2023",
     icon: MdOutlineWorkHistory,
-    iconBackground: "bg-teal-300",
+    iconBackground: "bg-yellow-300",
   },
   {
     id: 3,
@@ -46,7 +55,7 @@ export const TIMELINE = [
     href: "https://www.jio.com/",
     date: "Aug 2019 - Aug 2021",
     icon: HiOutlineBriefcase,
-    iconBackground: "bg-blue-300",
+    iconBackground: "bg-yellow-300",
   },
   {
     id: 1,

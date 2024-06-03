@@ -17,7 +17,7 @@ Website: [https://utk09.com](https://utk09.com/)
 
 ## Professional Summary
 
-Software Developer at Citigroup UK, recognized as an MLH Top 50 in 2023, and concurrently serving as an MLH Coach and Technical Program Associate. Graduated with distinction in MSc Computer Science from Newcastle University, possessing a strong foundation in JavaScript, Full-stack Web Development, Python, and Data Engineering. Known for tackling complex challenges and delivering innovative solutions, committed to making a significant impact in the dynamic tech industry.
+FX UI Developer (AVP) at Barclays, formerly SDE at Citigroup UK, and recognized as an MLH Top 50 in 2023. Concurrently serving as an MLH Coach and Technical Program Associate. Graduated with distinction in MSc Computer Science from Newcastle University, with experience in JavaScript, TypeScript, React, and Python. Known for tackling complex challenges and delivering innovative solutions, committed to making a significant impact in the dynamic tech industry.
 
 ## Skills
 
