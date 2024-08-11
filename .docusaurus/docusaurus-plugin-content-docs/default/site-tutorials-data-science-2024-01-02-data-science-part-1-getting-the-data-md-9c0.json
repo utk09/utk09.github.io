@@ -1,0 +1,60 @@
+{
+  "id": "data-science/2024-01-02-data-science-part-1-getting-the-data",
+  "title": "Data Science Part 1 - Getting the Data",
+  "description": "In this part, we will be discussing how to get the data for our data science project.",
+  "source": "@site/tutorials/data-science/2024-01-02-data-science-part-1-getting-the-data.md",
+  "sourceDirName": "data-science",
+  "slug": "/data-science/data-science-part-1-getting-the-data",
+  "permalink": "/tutorials/data-science/data-science-part-1-getting-the-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/utk09/utk09.github.io/edit/main/tutorials/data-science/2024-01-02-data-science-part-1-getting-the-data.md",
+  "tags": [
+    {
+      "inline": true,
+      "label": "python",
+      "permalink": "/tutorials/tags/python"
+    },
+    {
+      "inline": true,
+      "label": "data-science",
+      "permalink": "/tutorials/tags/data-science"
+    },
+    {
+      "inline": true,
+      "label": "data-collection",
+      "permalink": "/tutorials/tags/data-collection"
+    },
+    {
+      "inline": true,
+      "label": "data-cleaning",
+      "permalink": "/tutorials/tags/data-cleaning"
+    },
+    {
+      "inline": true,
+      "label": "web-scraping",
+      "permalink": "/tutorials/tags/web-scraping"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "slug": "data-science-part-1-getting-the-data",
+    "title": "Data Science Part 1 - Getting the Data",
+    "description": "In this part, we will be discussing how to get the data for our data science project.",
+    "authors": [
+      "utk09"
+    ],
+    "tags": [
+      "python",
+      "data-science",
+      "data-collection",
+      "data-cleaning",
+      "web-scraping"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tutorials",
+    "permalink": "/tutorials/"
+  }
+}

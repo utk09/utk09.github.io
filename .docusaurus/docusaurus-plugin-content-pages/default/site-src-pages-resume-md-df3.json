@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/resume",
+  "source": "@site/src/pages/resume.md",
+  "title": "Resume",
+  "description": "Full Stack Web Developer & Data Engineer | London, UK",
+  "frontMatter": {
+    "title": "Resume",
+    "date": "2024-02-15T00:00:00.000Z"
+  },
+  "unlisted": false
+}
