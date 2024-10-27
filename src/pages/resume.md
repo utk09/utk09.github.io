@@ -1,6 +1,6 @@
 ---
 title: Resume
-date: 2024-02-15
+date: 2024-10-27
 ---
 
 # Utkarsh A. Tiwari
@@ -31,7 +31,14 @@ FX UI Developer (AVP) at Barclays, formerly SDE at Citigroup UK, and recognized 
 
 ## Experience
 
-### Citigroup UK | London, UK
+### Barclays | London, UK
+
+Frontend Developer - AVP | June 2024 – Present
+
+- Developing FXOne app for internal and external users using Turbo, React.js, Typescript and OpenFin.
+- Creating a seamless user experience across browsers and Windows OS.
+
+### Citigroup | London, UK
 
 Software Engineer | September 2022 – Present
 
@@ -81,8 +88,8 @@ B.E Electronics and Telecommunication | July 2015 - June 2019
 ## Projects
 
 1. **Color Conjure**: A color palette generator using React.js, Tailwind CSS, and Typescript.
-    - GitHub: [https://github.com/utk09-NCL/color-palette-generator](https://github.com/utk09-NCL/color-palette-generator)
-    - Website: [https://color-conjure.netlify.app](https://color-conjure.netlify.app)
+   - GitHub: [https://github.com/utk09-NCL/color-palette-generator](https://github.com/utk09-NCL/color-palette-generator)
+   - Website: [https://color-conjure.netlify.app](https://color-conjure.netlify.app)
 2. **On-demand Service Provider Platform**: MSc Dissertation project using Express.js, MongoDB, and React.js.
 3. **Abordo**: MSc. Team project showcasing travel itineraries, developed with React.js, MongoDB, and Express.js.
 4. **Pothole GO**: A Machine Learning project using TensorFlow and Python for pothole detection, achieving 92.18% accuracy.
@@ -92,3 +99,5 @@ B.E Electronics and Telecommunication | July 2015 - June 2019
    - Developing a website for Leo Multiple 3231, Mumbai - [leomultiple3231.org](https://leomultiple3231.org)
 
 ## Have a role for me? Let's connect! Here's my [Resume in PDF format](/files/CV_Utkarsh_Tiwari.pdf)
+
+---
