@@ -22,34 +22,36 @@ FX UI Developer (AVP) at Barclays, formerly SDE at Citigroup UK, and recognized 
 ## Skills
 
 - **Front-end**: HTML & CSS, JavaScript, TypeScript, React.js, Next.js
-- **CSS Frameworks**: ICG Design System, Tailwind CSS, Bootstrap, Daisy UI, Reactstrap
-- **Back-end**: Node.js, Python (Data Engineering, Analysis, and Visualization), SpringBoot
+- **CSS Frameworks**: Tailwind CSS, Bootstrap, Daisy UI, Reactstrap
+- **Back-end**: Node.js, Python, Java SpringBoot
 - **Databases**: MongoDB, MySQL, PostgreSQL
 - **CI/CD**: Jenkins, CircleCI, GitHub Actions
-- **Project Management**: Agile Methodology (Jira, Trello), Figma, Canva, Adobe XD
+- **Project Management**: Agile Methodology, Jira, Trello
+- **Miscellaneous**: OpenFin, Figma, Canva, OpenShift, Docker
 - **Tech Streamer**: [@MajorLeagueHacking](https://www.youtube.com/@Majorleaguehacking) & [@TuplesEdu](https://www.youtube.com/@TuplesEdu)
 
 ## Experience
 
 ### Barclays | London, UK
 
-Frontend Developer - AVP | June 2024 – Present
+UI Developer - AVP | June 2024 – Present
 
 - Developing FXOne app for internal and external users using Turbo, React.js, Typescript and OpenFin.
 - Creating a seamless user experience across browsers and Windows OS.
 
 ### Citigroup | London, UK
 
-Software Engineer | September 2022 – Present
+Software Engineer | September 2022 – May 2024
 
-- Successfully delivered the MVP of an Equities spot price web-app in just 4 months, encompassing the entire SDLC from design to production, while gaining valuable insights into the financial markets.
-- Led the migration from create-react-app to Vite, enhancing app performance and developer experience.
-- Developed an Express.js mock-server for quick prototyping.
+- Delivered an MVP for an Equities spot price web-app in 4 months, covering the entire SDLC.
+- Collaborated with BAs and front-office users to gather and implement requirements.
+- Led migration from create-react-app to Vite, boosting performance and developer experience.
+- Built an Express.js mock server for rapid prototyping.
 - Contributed to a common UI component library.
-- Addressed npm vulnerabilities in four applications, reducing it from 15+ issues to 0.
-- Developed a Python-based project to visualise XML, JSON, and Protobuf data of Foreign Exchange (FX) currencies.
+- Reduced npm vulnerabilities from 15+ to zero across four applications.
+- Developed a Python-based POC to visualise FX currency data and converted it to a production-grade middleware with Java Spring Boot.
 
-### Major League Hacking (MLH) | Remote
+### Major League Hacking (MLH) | Remote, USA
 
 - Coach | December 2022 – Present
   - Facilitate hackathons and build hacker communities **([mlh.io](https://mlh.io) & [ghw.mlh.io](https://ghw.mlh.io))**
