@@ -11,9 +11,9 @@ Full Stack Web Developer & Data Engineer | London, UK
 
 Linkedin: [https://www.linkedin.com/in/utkarsh09](https://www.linkedin.com/in/utkarsh09/)
 
-GitHub: [https://github.com/utk09](https://github.com/utk09)
+GitHub: [https://github.com/utk09](https://github.com/utk09) | [https://github.com/utk09-NCL](https://github.com/utk09-NCL)
 
-Website: [https://utk09.com](https://utk09.com/)
+Website: [https://utk09.com](https://utk09.com/) | [https://utk09.github.io](https://utk09.github.io/)
 
 ## Professional Summary
 
@@ -44,7 +44,7 @@ UI Developer - AVP | June 2024 – Present
 Software Engineer | September 2022 – May 2024
 
 - Delivered an MVP for an Equities spot price web-app in 4 months, covering the entire SDLC.
-- Collaborated with BAs and front-office users to gather and implement requirements.
+- Collaborated with BAs, Product Owners and front-office users to gather and implement requirements.
 - Led migration from create-react-app to Vite, boosting performance and developer experience.
 - Built an Express.js mock server for rapid prototyping.
 - Contributed to a common UI component library.
@@ -54,10 +54,9 @@ Software Engineer | September 2022 – May 2024
 ### Major League Hacking (MLH) | Remote, USA
 
 - Coach | December 2022 – Present
+
   - Facilitate hackathons and build hacker communities **([mlh.io](https://mlh.io) & [ghw.mlh.io](https://ghw.mlh.io))**
   - Provide technical guidance and support in workshops and seminars.
-
-<br></br>
 
 - Technical Program Associate | May 2022 – March 2023
   - Mentored three cohorts, overseeing workshops and promoting agile practices.
@@ -99,6 +98,8 @@ B.E Electronics and Telecommunication | July 2015 - June 2019
    - Built website for an NGO - [leodistrict3231a1.com](https://leodistrict3231a1.com)
    - Developed website for Maharashtra Tour Organisers’ Association - [mtoa.co.in](https://mtoa.co.in)
    - Developing a website for Leo Multiple 3231, Mumbai - [leomultiple3231.org](https://leomultiple3231.org)
+
+---
 
 ## Have a role for me? Let's connect! Here's my [Resume in PDF format](/files/CV_Utkarsh_Tiwari.pdf)
 
