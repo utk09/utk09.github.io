@@ -80,10 +80,13 @@ B.E Electronics and Telecommunication | July 2015 - June 2019
 
 ## Projects
 
-1. **On-demand Service Provider Platform**: MSc Dissertation project using Express.js, MongoDB, and React.js.
-2. **Abordo**: MSc. Team project showcasing travel itineraries, developed with React.js, MongoDB, and Express.js.
-3. **Pothole GO**: A Machine Learning project using TensorFlow and Python for pothole detection, achieving 92.18% accuracy.
-4. **Freelance Work**:
+1. **Color Conjure**: A color palette generator using React.js, Tailwind CSS, and Typescript.
+    - GitHub: [https://github.com/utk09-NCL/color-palette-generator](https://github.com/utk09-NCL/color-palette-generator)
+    - Website: [https://color-conjure.netlify.app](https://color-conjure.netlify.app)
+2. **On-demand Service Provider Platform**: MSc Dissertation project using Express.js, MongoDB, and React.js.
+3. **Abordo**: MSc. Team project showcasing travel itineraries, developed with React.js, MongoDB, and Express.js.
+4. **Pothole GO**: A Machine Learning project using TensorFlow and Python for pothole detection, achieving 92.18% accuracy.
+5. **Freelance Work**:
    - Built website for an NGO - [leodistrict3231a1.com](https://leodistrict3231a1.com)
    - Developed website for Maharashtra Tour Organisers’ Association - [mtoa.co.in](https://mtoa.co.in)
    - Developing a website for Leo Multiple 3231, Mumbai - [leomultiple3231.org](https://leomultiple3231.org)
