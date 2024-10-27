@@ -1,0 +1,28 @@
+{
+  "id": "index",
+  "title": "Tutorials",
+  "description": "A collection of tutorials authored by Utkarsh Tiwari (UT | utk09).",
+  "source": "@site/tutorials/index.mdx",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/tutorials/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/utk09/utk09.github.io/edit/main/tutorials/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Tutorials",
+    "description": "A collection of tutorials authored by Utkarsh Tiwari (UT | utk09).",
+    "authors": [
+      "utk09"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Data Science Part 1 - Getting the Data",
+    "permalink": "/tutorials/data-science/data-science-part-1-getting-the-data"
+  }
+}
