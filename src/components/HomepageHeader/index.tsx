@@ -1,12 +1,10 @@
-// @ts-check
-
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import QuoteComponent from "./QuoteComponent";
 import NavbarComponent from "./NavbarComponent";
 import ProfileSection from "./ProfileSection";
 
-export default function HomepageHeader() {
+const HomepageHeader: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
   return (
     <div className="mx-auto min-w-full bg-slate-200 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex justify-center transition duration-300">
@@ -17,4 +15,6 @@ export default function HomepageHeader() {
       </div>
     </div>
   );
-}
+};
+
+export default HomepageHeader;

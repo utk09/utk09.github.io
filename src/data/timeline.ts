@@ -1,8 +1,9 @@
 import { HiOutlineBriefcase } from "react-icons/hi";
 import { FaUniversity } from "react-icons/fa";
 import { MdOutlineWorkHistory } from "react-icons/md";
+import type { TimelineEvent } from "@site/src/types";
 
-export const TIMELINE = [
+export const TIMELINE: TimelineEvent[] = [
   {
     id: 7,
     content: "AVP FX UI Developer at",
@@ -67,22 +68,3 @@ export const TIMELINE = [
     iconBackground: "bg-violet-300",
   },
 ];
-
-export const SKILLS = {
-  FRONTEND: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Redux"],
-  "CSS FRAMEWORKS": ["Tailwind CSS", "Bootstrap", "Material-UI"],
-  BACKEND: [
-    "Node.js",
-    "Express",
-    "Java Spring Boot",
-    "Python",
-    "Flask",
-    "FastAPI",
-  ],
-  DATABASES: ["MongoDB", "PostgreSQL", "MySQL", "SQLite"],
-  DEVOPS: ["Docker", "Jenkins", "CircleCI", "GitHub Actions"],
-  TESTING: ["Jest", "React Testing Library", "Vitest", "Cypress"],
-  "PROJECT MANAGEMENT": ["Jira", "Trello"],
-  "VERSION CONTROL & PLATFORMS": ["Git", "GitHub", "GitLab", "Bitbucket"],
-  STREAMING: ["@MajorLeagueHacking on YT", "@TuplesEdu on YT"],
-};

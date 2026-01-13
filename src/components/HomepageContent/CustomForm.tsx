@@ -1,34 +1,33 @@
-import React from "react";
+import React, { FormEvent } from "react";
 
-const CustomForm = () => {
-  // Function to handle form submission
-  const handleSubmit = async (event) => {
-    event.preventDefault(); // Prevent default form submission
-    const formData = new FormData(event.target); // 'event.target' is the form
+interface FormJSON {
+  [key: string]: string;
+}
 
-    let isValid = true; // Flag to track validation status
+const CustomForm: React.FC = () => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>): Promise<void> => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
 
-    // Convert form data to JSON, trim values, and ensure the fields are not empty
-    const formJSON = {};
+    let isValid = true;
+
+    const formJSON: FormJSON = {};
     formData.forEach((value, key) => {
-      const trimmedValue = value.trim();
-      formJSON[key] = trimmedValue; // Store the trimmed value
+      const trimmedValue = (value as string).trim();
+      formJSON[key] = trimmedValue;
 
-      // Check fields are not empty
       if (!trimmedValue && isValid) {
         alert("Please fill in all fields");
         isValid = false;
         return;
       }
 
-      // Check email is valid
       if (key === "email" && !trimmedValue.includes("@") && isValid) {
         alert("Please enter a valid email address");
         isValid = false;
         return;
       }
 
-      // Check name is valid
       if (key === "given-name" && trimmedValue.length < 3 && isValid) {
         alert("Please enter a valid name");
         isValid = false;
@@ -37,10 +36,9 @@ const CustomForm = () => {
     });
 
     if (!isValid) {
-      return; // Stop form submission if validation failed
+      return;
     }
 
-    // Submit the form
     try {
       const response = await fetch("/", {
         method: "POST",
@@ -48,17 +46,13 @@ const CustomForm = () => {
         body: new URLSearchParams(formJSON).toString(),
       });
 
-      // Handle response...
       if (response.ok) {
         alert("Form submitted successfully");
-        // Redirect or show a success message
-        window.location.href = "/"; // success route
+        window.location.href = "/";
       } else {
-        // Show an error message
         alert("Form submission failed");
       }
     } catch (error) {
-      // Handle error...
       console.error("Form submission error:", error);
       alert("Form submission error");
     }

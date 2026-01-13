@@ -1,9 +1,8 @@
-// @ts-check
 import React from "react";
-import { TIMELINE } from "./constants";
+import { TIMELINE } from "@site/src/data";
 import clsx from "clsx";
 
-const WorkExperience = () => {
+const WorkExperience: React.FC = () => {
   return (
     <>
       <h3 className="text-lg font-semibold">Experience & Education</h3>

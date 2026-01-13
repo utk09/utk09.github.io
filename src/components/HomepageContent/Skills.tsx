@@ -1,8 +1,7 @@
-// @ts-check
 import React from "react";
-import { SKILLS } from "./constants";
+import { SKILLS } from "@site/src/data";
 
-const Skills = () => {
+const Skills: React.FC = () => {
   return (
     <>
       <h3 className="text-lg font-semibold">Skills</h3>

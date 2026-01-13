@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind CSS v4 - import theme and utilities (excluding preflight to avoid Infima conflicts) */
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+/* Configure content sources for Tailwind to scan */
+@source "../**/*.{js,jsx,ts,tsx,md,mdx}";
+@source "../../tutorials/**/*.{md,mdx}";
+@source "../../blog/**/*.{md,mdx}";
+
+/* Dark mode variant for Docusaurus data-theme attribute */
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Form styles (replacing @tailwindcss/forms plugin) */
+@layer components {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    @apply border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+}
 
 /* You can override the default Infima variables here. */
 :root {

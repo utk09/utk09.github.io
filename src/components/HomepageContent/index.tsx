@@ -1,11 +1,9 @@
-// @ts-check
-
 import React from "react";
 import WorkExperience from "./WorkExperience";
 import Skills from "./Skills";
 import CustomForm from "./CustomForm";
 
-export default function HomepageContent() {
+const HomepageContent: React.FC = () => {
   return (
     <div>
       <section className="about-me">
@@ -39,4 +37,6 @@ export default function HomepageContent() {
       <CustomForm />
     </div>
   );
-}
+};
+
+export default HomepageContent;

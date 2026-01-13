@@ -1,9 +1,16 @@
 import React from "react";
 import Link from "@docusaurus/Link";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import type { SocialLink } from "@site/src/types";
 
-const ProfileSection = ({ siteConfig }) => {
-  const socialLinksArr = [
+interface ProfileSectionProps {
+  siteConfig: {
+    tagline: string;
+  };
+}
+
+const ProfileSection: React.FC<ProfileSectionProps> = ({ siteConfig }) => {
+  const socialLinksArr: SocialLink[] = [
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/utkarsh09/",

@@ -1,9 +1,7 @@
-// @ts-check
-
 import React from "react";
 import Link from "@docusaurus/Link";
 
-const CustomFooter = () => {
+const CustomFooter: React.FC = () => {
   return (
     <footer className="bg-slate-900">
       <div className="px-6 lg:px-8 pt-12 pb-4">

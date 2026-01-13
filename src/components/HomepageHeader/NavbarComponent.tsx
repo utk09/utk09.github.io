@@ -1,21 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "@docusaurus/Link";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 
-const NavbarComponent = () => {
-  // State to manage the current theme
-  const [theme, setTheme] = React.useState("dark");
+type Theme = "light" | "dark";
 
-  // Effect hook to apply the theme on component mount
-  React.useEffect(() => {
-    const storedTheme = localStorage.getItem("theme") || "dark";
+const NavbarComponent: React.FC = () => {
+  const [theme, setTheme] = useState<Theme>("dark");
+
+  useEffect(() => {
+    const storedTheme = (localStorage.getItem("theme") as Theme) || "dark";
     setTheme(storedTheme);
     document.documentElement.setAttribute("data-theme", storedTheme);
   }, []);
 
-  // Function to toggle theme and update local storage
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
+  const toggleTheme = (): void => {
+    const newTheme: Theme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
