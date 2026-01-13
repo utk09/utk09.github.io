@@ -3,7 +3,7 @@ title: Resume
 date: 2024-10-27
 ---
 
-# Utkarsh A. Tiwari
+## Utkarsh A. Tiwari
 
 Full Stack Web Developer & Data Engineer | London, UK
 
@@ -54,7 +54,6 @@ Software Engineer | September 2022 – May 2024
 ### Major League Hacking (MLH) | Remote, USA
 
 - Coach | December 2022 – Present
-
   - Facilitate hackathons and build hacker communities **([mlh.io](https://mlh.io) & [ghw.mlh.io](https://ghw.mlh.io))**
   - Provide technical guidance and support in workshops and seminars.
 

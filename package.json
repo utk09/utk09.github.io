@@ -11,7 +11,11 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "lint:format": "npm run lint:fix && npm run format"
   },
   "dependencies": {
     "@cronitorio/cronitor-rum": "0.4.1",
@@ -28,11 +32,22 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/types": "3.9.2",
+    "@eslint/js": "9.39.2",
+    "@eslint/markdown": "7.5.1",
     "@types/node": "25.0.8",
     "autoprefixer": "10.4.23",
+    "eslint": "9.39.2",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.4",
+    "eslint-plugin-react-hooks": "7.0.1",
+    "eslint-plugin-react-refresh": "0.4.26",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "jiti": "2.6.1",
     "postcss": "8.5.6",
+    "prettier": "3.7.4",
     "tailwindcss": "4.1.18",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.53.0"
   },
   "browserslist": {
     "production": [

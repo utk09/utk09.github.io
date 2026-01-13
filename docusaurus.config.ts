@@ -1,6 +1,6 @@
-import { themes as prismThemes } from "prism-react-renderer";
-import type { Config } from "@docusaurus/types";
 import type { Options as PresetOptions, ThemeConfig } from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
+import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
   title: "Utkarsh Tiwari (UT | utk09)",
@@ -13,7 +13,11 @@ const config: Config = {
   projectName: "utk09.github.io",
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
+  },
   onDuplicateRoutes: "warn",
   trailingSlash: false,
 
@@ -31,9 +35,11 @@ const config: Config = {
           priority: 0.9,
           filename: "sitemap.xml",
         },
-        gtag: {
-          trackingID: ["G-67H9CP0Z8Q", "G-H98RBFSDQ5"],
-        },
+        ...(process.env.NODE_ENV === "production" && {
+          gtag: {
+            trackingID: ["G-67H9CP0Z8Q", "G-H98RBFSDQ5"],
+          },
+        }),
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/tutorials",
@@ -47,7 +53,15 @@ const config: Config = {
           routeBasePath: "/blogs",
           showReadingTime: true,
           postsPerPage: 5,
-          blogSidebarCount: 0,
+          blogSidebarCount: "ALL",
+          blogSidebarTitle: "All Posts",
+          feedOptions: {
+            type: ["rss", "atom"],
+            title: "Utkarsh Tiwari (UT) Blog",
+            description: "Tech tutorials, insights, and developer experiences from Utkarsh Tiwari",
+            copyright: `Copyright ${new Date().getFullYear()} Utkarsh Tiwari`,
+            language: "en",
+          },
           editUrl: ({ blogDirPath, blogPath }) => {
             return `https://github.com/utk09/utk09.github.io/edit/main/${blogDirPath}/${blogPath}`;
           },
@@ -60,14 +74,44 @@ const config: Config = {
   ],
 
   plugins: [
-    async function tailwindCssPlugin() {
+    function tailwindCssPlugin() {
       return {
         name: "docusaurus-tailwindcss",
         configurePostCss(postcssOptions: { plugins: unknown[] }) {
+          // eslint-disable-next-line @typescript-eslint/no-require-imports
           postcssOptions.plugins.push(require("@tailwindcss/postcss"));
           return postcssOptions;
         },
       };
+    },
+  ],
+
+  headTags: [
+    {
+      tagName: "script",
+      attributes: {
+        type: "application/ld+json",
+      },
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Utkarsh Tiwari",
+        alternateName: "UT",
+        url: "https://utk09.com",
+        image: "https://utk09.com/img/ut_portrait_image.png",
+        sameAs: [
+          "https://github.com/utk09",
+          "https://www.linkedin.com/in/utkarsh09/",
+          "https://twitter.com/utk0909",
+          "https://dev.to/utk09",
+          "https://medium.com/@utk09",
+        ],
+        jobTitle: "FX UI Developer (AVP)",
+        worksFor: {
+          "@type": "Organization",
+          name: "Barclays",
+        },
+      }),
     },
   ],
 
@@ -90,6 +134,30 @@ const config: Config = {
       {
         name: "robots",
         content: "index, follow",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:site_name",
+        content: "Utkarsh Tiwari (UT)",
+      },
+      {
+        property: "og:locale",
+        content: "en_US",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:site",
+        content: "@utk0909",
+      },
+      {
+        name: "twitter:creator",
+        content: "@utk0909",
       },
     ],
     colorMode: {

@@ -4,18 +4,7 @@ title: How to resolve vulnerabilities in Front-End Applications
 description: Learn how to tackle vulnerabilities in front-end libraries such as React.js, Angular, and Vue.js to enhance your application's security.
 authors: [utk09]
 tags:
-  [
-    vulnerabilities,
-    react,
-    angular,
-    vue,
-    front-end,
-    security,
-    libraries,
-    package.json,
-    npm,
-    yarn,
-  ]
+  [vulnerabilities, react, angular, vue, front-end, security, libraries, package.json, npm, yarn]
 ---
 
 If you're working with front-end frameworks like React.js, Angular, or Vue.js, or if your project relies on a `package.json` file, you might encounter vulnerabilities when running `npm audit` or `yarn audit`. These vulnerabilities pose a security risk and need to be addressed promptly. This article will guide you through resolving vulnerabilities, particularly in React.js-based projects.

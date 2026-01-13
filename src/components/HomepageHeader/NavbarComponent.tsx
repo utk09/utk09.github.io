@@ -1,43 +1,49 @@
-import React, { useState, useEffect } from "react";
 import Link from "@docusaurus/Link";
-import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
+import React, { useEffect, useState } from "react";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 type Theme = "light" | "dark";
 
 const NavbarComponent: React.FC = () => {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window !== "undefined") {
+      return (localStorage.getItem("theme") || "dark") as Theme;
+    }
+    return "dark";
+  });
+  const [isRotating, setIsRotating] = useState(false);
 
   useEffect(() => {
-    const storedTheme = (localStorage.getItem("theme") as Theme) || "dark";
-    setTheme(storedTheme);
-    document.documentElement.setAttribute("data-theme", storedTheme);
-  }, []);
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
 
   const toggleTheme = (): void => {
+    setIsRotating(true);
     const newTheme: Theme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
+    setTimeout(() => setIsRotating(false), 300);
   };
 
   return (
-    <div className="py-2 px-6 lg:px-8 max-w-lg bg-slate-700 shadow-2xl rounded-full mt-4 mb-8 mx-auto flex justify-between items-center">
+    <nav className="py-3 px-6 lg:px-8 max-w-md bg-slate-300/80 dark:bg-slate-800/80 backdrop-blur-nav shadow-lg rounded-full mt-6 mb-10 mx-auto flex justify-between items-center animate-fade-in">
       <Link
-        className="text-xl md:text-2xl font-bold text-slate-50 hover:text-slate-200 dark:hover:text-slate-200"
+        className="text-xl md:text-2xl font-bold text-slate-50 hover:text-slate-300 transition-colors duration-200"
         to="/"
       >
         UT
       </Link>
-      <div className="flex items-center">
-        <div className="flex underline">
+      <div className="flex items-center gap-6">
+        <div className="flex gap-4">
           <Link
-            className="text-xs md:text-base text-slate-50 hover:text-slate-400 dark:hover:text-slate-400 custom-mono"
+            className="text-sm md:text-base text-slate-200 hover:text-white custom-mono link-underline transition-colors duration-200"
             to="/tutorials"
           >
             Tutorials
           </Link>
           <Link
-            className="text-xs md:text-base text-slate-50 hover:text-slate-400 dark:hover:text-slate-400 custom-mono ml-4"
+            className="text-sm md:text-base text-slate-200 hover:text-white custom-mono link-underline transition-colors duration-200"
             to="/blogs"
           >
             Blogs
@@ -45,22 +51,19 @@ const NavbarComponent: React.FC = () => {
         </div>
         <button
           onClick={toggleTheme}
-          className="ml-4 cursor-pointer rounded-full border-0 outline-none focus:outline-none bg-slate-700 hover:bg-slate-600 dark:bg-slate-700 dark:hover:bg-slate-600"
+          aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+          className="p-2 cursor-pointer rounded-full border-0 outline-none focus-ring bg-slate-700/50 hover:bg-slate-600/70 transition-all duration-200"
         >
-          {theme === "light" ? (
-            <MdOutlineLightMode
-              className="outline-none text-slate-50"
-              size={24}
-            />
-          ) : (
-            <MdOutlineDarkMode
-              className="outline-none text-slate-50"
-              size={24}
-            />
-          )}
+          <div className={`transition-transform duration-300 ${isRotating ? "rotate-180" : ""}`}>
+            {theme === "light" ? (
+              <MdOutlineLightMode className="text-amber-300" size={20} />
+            ) : (
+              <MdOutlineDarkMode className="text-slate-300" size={20} />
+            )}
+          </div>
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
 

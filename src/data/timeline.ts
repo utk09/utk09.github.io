@@ -1,7 +1,7 @@
-import { HiOutlineBriefcase } from "react-icons/hi";
-import { FaUniversity } from "react-icons/fa";
-import { MdOutlineWorkHistory } from "react-icons/md";
 import type { TimelineEvent } from "@site/src/types";
+import { FaUniversity } from "react-icons/fa";
+import { HiOutlineBriefcase } from "react-icons/hi";
+import { MdOutlineWorkHistory } from "react-icons/md";
 
 export const TIMELINE: TimelineEvent[] = [
   {

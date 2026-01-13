@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
 import * as Cronitor from "@cronitorio/cronitor-rum";
-import HomepageHeader from "@site/src/components/HomepageHeader";
-import HomepageContent from "@site/src/components/HomepageContent";
 import CustomFooter from "@site/src/components/CustomFooter";
+import HomepageContent from "@site/src/components/HomepageContent";
+import HomepageHeader from "@site/src/components/HomepageHeader";
+import React, { useEffect } from "react";
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -11,13 +11,13 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col bg-white dark:bg-slate-900">
       <HomepageHeader />
-      <main className="max-w-7xl mx-auto justify-center mt-10 mb-20 px-10 overflow-hidden">
+      <main className="flex-1 max-w-5xl w-full mx-auto py-16 px-6">
         <HomepageContent />
       </main>
       <CustomFooter />
-    </>
+    </div>
   );
 };
 

@@ -1,12 +1,17 @@
-import React, { FormEvent } from "react";
+import type { FormEvent } from "react";
+import React, { useState } from "react";
+import { HiOutlineMail, HiOutlineUser } from "react-icons/hi";
 
-interface FormJSON {
+type FormJSON = {
   [key: string]: string;
-}
+};
 
 const CustomForm: React.FC = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = async (event: FormEvent<HTMLFormElement>): Promise<void> => {
     event.preventDefault();
+    setIsSubmitting(true);
     const formData = new FormData(event.currentTarget);
 
     let isValid = true;
@@ -35,10 +40,6 @@ const CustomForm: React.FC = () => {
       }
     });
 
-    if (!isValid) {
-      return;
-    }
-
     try {
       const response = await fetch("/", {
         method: "POST",
@@ -55,58 +56,70 @@ const CustomForm: React.FC = () => {
     } catch (error) {
       console.error("Form submission error:", error);
       alert("Form submission error");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
-    <div>
-      <form
-        className="pb-12"
-        name="contact"
-        method="post"
-        data-netlify="true"
-        onSubmit={handleSubmit}
-      >
+    <div className="card p-6 md:p-8">
+      <h3 className="section-title text-xl font-semibold text-slate-900 dark:text-white">
+        Stay Updated
+      </h3>
+      <p className="text-sm text-slate-600 dark:text-slate-400 mt-4 mb-6">
+        Interested in updates? Subscribe to the newsletter. Privacy respected, unsubscribe anytime.
+      </p>
+
+      <form name="contact" method="post" data-netlify="true" onSubmit={void handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
-        <p className="mt-1 text-base">
-          Interested in updates? Subscribe to the newsletter. Privacy respected,
-          unsubscribe anytime.
-        </p>
-        <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3 align-bottom">
-          <div>
-            <label htmlFor="given-name" className="text-sm font-medium">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          {/* Name Field */}
+          <div className="relative">
+            <label htmlFor="given-name" className="sr-only">
               Full Name
             </label>
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <HiOutlineUser className="h-5 w-5 text-slate-400" />
+            </div>
             <input
               type="text"
               name="given-name"
               id="given-name"
               autoComplete="given-name"
-              className="bg-transparent mt-2 block w-full rounded-md border-2 border-slate-400 py-2 text-sm"
+              placeholder="Your name"
+              className="block w-full pl-10 pr-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-green-500 focus:border-transparent transition-all duration-200"
             />
           </div>
-          <div>
-            <label htmlFor="email" className="text-sm font-medium">
+
+          {/* Email Field */}
+          <div className="relative">
+            <label htmlFor="email" className="sr-only">
               Email Address
             </label>
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <HiOutlineMail className="h-5 w-5 text-slate-400" />
+            </div>
             <input
               id="email"
               name="email"
               type="email"
               autoComplete="email"
-              className="bg-transparent mt-2 block w-full rounded-md border-2 border-slate-400 py-2 text-sm"
+              placeholder="your@email.com"
+              className="block w-full pl-10 pr-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-green-500 focus:border-transparent transition-all duration-200"
             />
           </div>
-          <div>
-            <button
-              type="submit"
-              className="mt-8 w-full md:w-auto block px-8 py-3 bg-slate-600 text-white font-semibold rounded-md shadow hover:bg-slate-500 transition-colors duration-300 border-0 cursor-pointer"
-            >
-              Subscribe
-            </button>
-          </div>
         </div>
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="w-full md:w-auto px-8 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-medium rounded-xl shadow-sm hover:bg-slate-700 dark:hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {isSubmitting ? "Subscribing..." : "Subscribe"}
+        </button>
       </form>
     </div>
   );

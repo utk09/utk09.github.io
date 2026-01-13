@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
 
 /* Tailwind CSS v4 - import theme and utilities (excluding preflight to avoid Infima conflicts) */
 @import "tailwindcss/theme" layer(theme);
@@ -36,7 +36,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #74c69d;
   --ifm-color-primary-dark: #2d6a4f;
   --ifm-color-primary-darker: #1b4332;
@@ -73,17 +73,243 @@ code,
 
 /* Targeting the scrollbar track */
 ::-webkit-scrollbar-track {
-  background: transparent; /* Making scrollbar track background transparent */
+  background: transparent;
+  /* Making scrollbar track background transparent */
 }
 
 /* Targeting the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.1); /* Making scrollbar thumb transparent */
-  border-radius: 10px; /* Adding border radius to scrollbar thumb */
+  background: rgba(0, 0, 0, 0.1);
+  /* Making scrollbar thumb transparent */
+  border-radius: 10px;
+  /* Adding border radius to scrollbar thumb */
 }
 
 /* Customize the scrollbar width and height */
 ::-webkit-scrollbar {
-  width: 10px; /* Adjust the width of the scrollbar */
-  height: 10px; /* Adjust the height of the scrollbar for horizontal scroll */
+  width: 10px;
+  /* Adjust the width of the scrollbar */
+  height: 10px;
+  /* Adjust the height of the scrollbar for horizontal scroll */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes underlineExpand {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes rotate180 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.4s ease-out forwards;
+}
+
+/* Animation delays for stagger effects */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Scroll-triggered animations - paused until visible */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.is-visible {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.hover-lift {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-scale-sm {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale-sm:hover {
+  transform: scale(1.02);
+}
+
+/* Link with animated underline */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--ifm-color-primary);
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+:root {
+  --accent-color: var(--ifm-color-primary);
+  --accent-color-subtle: rgba(1, 79, 134, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(0, 0, 0, 0.06);
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --card-shadow-hover: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  --section-spacing: 4rem;
+}
+
+[data-theme="dark"] {
+  --accent-color: var(--ifm-color-primary);
+  --accent-color-subtle: rgba(116, 198, 157, 0.1);
+  --card-bg: rgba(30, 41, 59, 0.5);
+  --card-border: rgba(255, 255, 255, 0.06);
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-color-subtle);
+}
+
+.backdrop-blur-nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }

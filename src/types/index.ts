@@ -1,7 +1,7 @@
-import type { IconType } from "react-icons";
 import type { ReactNode } from "react";
+import type { IconType } from "react-icons";
 
-export interface TimelineEvent {
+export type TimelineEvent = {
   id: number;
   content: string;
   target: string;
@@ -9,14 +9,23 @@ export interface TimelineEvent {
   date: string;
   icon: IconType;
   iconBackground: string;
-}
+};
 
-export interface SkillsMap {
+export type SkillsMap = {
   [category: string]: string[];
-}
+};
 
-export interface SocialLink {
+export type SocialLink = {
   name: string;
   link: string;
   icon: ReactNode;
-}
+};
+
+export type FeaturedPost = {
+  title: string;
+  slug: string;
+  description: string;
+  date: string;
+  tags: string[];
+  image?: string;
+};
