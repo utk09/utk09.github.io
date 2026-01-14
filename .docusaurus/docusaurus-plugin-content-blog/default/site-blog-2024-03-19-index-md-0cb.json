@@ -1,0 +1,72 @@
+{
+  "permalink": "/blogs/electoral-bonds-analysis",
+  "editUrl": "https://github.com/utk09/utk09.github.io/edit/main/blog/2024-03-19/index.md",
+  "source": "@site/blog/2024-03-19/index.md",
+  "title": "Electoral Bonds Analysis using Python",
+  "description": "Dive deep into the world of electoral bonds with our comprehensive Python analysis.",
+  "date": "2024-03-19T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "python",
+      "permalink": "/blogs/tags/python"
+    },
+    {
+      "inline": true,
+      "label": "data-analysis",
+      "permalink": "/blogs/tags/data-analysis"
+    },
+    {
+      "inline": true,
+      "label": "data-visualization",
+      "permalink": "/blogs/tags/data-visualization"
+    },
+    {
+      "inline": true,
+      "label": "electoral-bonds",
+      "permalink": "/blogs/tags/electoral-bonds"
+    },
+    {
+      "inline": true,
+      "label": "streamlit",
+      "permalink": "/blogs/tags/streamlit"
+    }
+  ],
+  "readingTime": 5.11,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Utkarsh Tiwari",
+      "title": "FX UI Developer (AVP) at Barclays",
+      "url": "https://github.com/utk09",
+      "socials": {
+        "twitter": "https://twitter.com/utk0909",
+        "github": "https://github.com/utk09",
+        "linkedin": "https://www.linkedin.com/in/utkarsh09/"
+      },
+      "imageURL": "https://github.com/utk09.png",
+      "key": "utk09",
+      "page": null
+    }
+  ],
+  "frontMatter": {
+    "slug": "electoral-bonds-analysis",
+    "title": "Electoral Bonds Analysis using Python",
+    "description": "Dive deep into the world of electoral bonds with our comprehensive Python analysis.",
+    "authors": [
+      "utk09"
+    ],
+    "tags": [
+      "python",
+      "data-analysis",
+      "data-visualization",
+      "electoral-bonds",
+      "streamlit"
+    ]
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "How to resolve vulnerabilities in Front-End Applications",
+    "permalink": "/blogs/resolve-vulnerabilities-in-frontend-apps"
+  }
+}

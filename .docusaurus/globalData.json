@@ -1,0 +1,48 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/tutorials",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/tutorials",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "data-science/2024-01-02-data-science-part-1-getting-the-data",
+              "path": "/tutorials/data-science/data-science-part-1-getting-the-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "index",
+              "path": "/tutorials/",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/tutorials/",
+                "label": "index"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  },
+  "docusaurus-plugin-google-gtag": {
+    "default": {
+      "trackingID": [
+        "G-67H9CP0Z8Q",
+        "G-H98RBFSDQ5"
+      ],
+      "anonymizeIP": false,
+      "id": "default"
+    }
+  }
+}

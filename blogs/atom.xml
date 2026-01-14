@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://utk09.com/blogs</id>
+    <title>Utkarsh Tiwari (UT) Blog</title>
+    <updated>2024-03-19T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://utk09.com/blogs"/>
+    <subtitle>Tech tutorials, insights, and developer experiences from Utkarsh Tiwari</subtitle>
+    <icon>https://utk09.com/img/favicon.ico?v=4</icon>
+    <rights>Copyright 2026 Utkarsh Tiwari</rights>
+    <entry>
+        <title type="html"><![CDATA[Electoral Bonds Analysis using Python]]></title>
+        <id>https://utk09.com/blogs/electoral-bonds-analysis</id>
+        <link href="https://utk09.com/blogs/electoral-bonds-analysis"/>
+        <updated>2024-03-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dive deep into the world of electoral bonds with our comprehensive Python analysis.]]></summary>
+        <content type="html"><![CDATA[<p>In this project, I use Python to look into electoral bonds. This post shares what I've learned and the code I used.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction">Introduction<a href="https://utk09.com/blogs/electoral-bonds-analysis#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction" translate="no">​</a></h2>
+<p>Electoral bonds are like special coupons used for donating money to political parties in India. The Reserve Bank of India makes these bonds, and anyone or any company in India can buy them. These can then be given to political parties that got at least 1% of votes in the latest elections. The thing is, nobody gets to know who gave the money. These bonds can only be turned into cash by the political party within 15 days through a special bank account.</p>
+<p>Recently, India's Supreme Court decided to let everyone know details about these electoral bonds. So, I wanted to look into this data and see what's happening with these donations.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-the-data">Getting the Data<a href="https://utk09.com/blogs/electoral-bonds-analysis#getting-the-data" class="hash-link" aria-label="Direct link to Getting the Data" title="Direct link to Getting the Data" translate="no">​</a></h2>
+<p>The data is obtained from the <a href="https://www.eci.gov.in/disclosure-of-electoral-bonds" target="_blank" rel="noopener noreferrer" class="">Election Commision of India</a> website. The data is available in the form of PDFs.</p>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="purchaser data" src="https://utk09.com/assets/images/purchaser_data_pdf-d8c9f024310ab2b800f28b449ed4aea3.png" title="purchaser data" width="1572" height="598" class="img_ev3q"></th></tr></thead></table>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="encashment data" src="https://utk09.com/assets/images/encashment_data_pdf-2d1a4a04fef53aa28ab384f5c3005ebf.png" title="encashment data" width="1534" height="598" class="img_ev3q"></th></tr></thead></table>
+<p>The PDF's are also available in the <a href="https://github.com/utk09/electoral-bonds-data-analysis/tree/main/pdf_data" target="_blank" rel="noopener noreferrer" class="">pdf_data</a> folder on my GitHub repository.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pdf-to-csv-challenge">PDF to CSV challenge<a href="https://utk09.com/blogs/electoral-bonds-analysis#pdf-to-csv-challenge" class="hash-link" aria-label="Direct link to PDF to CSV challenge" title="Direct link to PDF to CSV challenge" translate="no">​</a></h2>
+<p>Because the data was in PDFs, which are hard to work with, I used Python <a href="https://pypdf2.readthedocs.io/en/3.0.0/" target="_blank" rel="noopener noreferrer" class="">PyPDF2</a> to change it into CSV files, which are easier to handle. Here's a screenshot of code showing how I did it:</p>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="process text" src="https://utk09.com/assets/images/process_text-9f4ee75f83ed4461b452aec193f129e8.png" title="process text" width="1908" height="1352" class="img_ev3q"></th></tr></thead></table>
+<p>In this project, the main task was to sort out data from electoral bonds that were all mixed up without clear separation between different pieces of information. The data didn't have usual separators like commas or new lines to tell where one piece of data ended and the next one began.</p>
+<p>The solution came from noticing patterns in the data: it started with <code>dates</code> and ended with money amounts (like <code>1,000</code>, <code>10,000</code>, <code>1,00,000</code>), which always had <code>000</code> at the end. Here's how the sorting was done:</p>
+<ol>
+<li class="">
+<p><strong>Extracting Text:</strong> First, the text was taken out and put into a list. This text was usually one record for each page of the PDF.</p>
+</li>
+<li class="">
+<p><strong>Finding Dates:</strong> Then, using patterns, the script found where each date started in the text. Since all records started with a date, this helped identify the beginning of each new piece of data.</p>
+</li>
+<li class="">
+<p><strong>Cutting into Pieces:</strong> With the start of each date found, the text was cut into sections. Each section was supposed to be one record.</p>
+</li>
+<li class="">
+<p><strong>Pulling Out Information:</strong> For every piece of text, the script looked for and pulled out important information like the date, how much money was involved, and who was involved.</p>
+</li>
+<li class="">
+<p><strong>Cleaning Up:</strong> After getting the necessary details, the script removed any unwanted bits from the money amounts and made sure everything looked right.</p>
+</li>
+<li class="">
+<p><strong>Putting Everything Together:</strong> All cleaned data for each record was put together in a structured way, making it ready for the last step.</p>
+</li>
+<li class="">
+<p><strong>Making a CSV File:</strong> In the end, all these structured records were turned into a CSV file, which is much easier to work with for analysis.</p>
+</li>
+</ol>
+<p>You can find the complete scripts for this process <a href="https://github.com/utk09/electoral-bonds-data-analysis/blob/main/01_clean_purchaser_data.py" target="_blank" rel="noopener noreferrer" class="">here</a> for the purchaser data and <a href="https://github.com/utk09/electoral-bonds-data-analysis/blob/main/02_clean_encasher_data.py" target="_blank" rel="noopener noreferrer" class="">here</a> for the encasher data.</p>
+<p>This method made it possible to turn messy text into neat, ordered data ready for digging into.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-analysis">Data Analysis<a href="https://utk09.com/blogs/electoral-bonds-analysis#data-analysis" class="hash-link" aria-label="Direct link to Data Analysis" title="Direct link to Data Analysis" translate="no">​</a></h2>
+<p>I looked into details about who bought the bonds and who cashed them in. You can find all the code and how to set it up on my <a href="https://github.com/utk09/electoral-bonds-data-analysis/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="">GitHub repository</a></p>
+<p>In this analysis, I focussed on the purchase and encashment patterns of Electoral Bonds. Here are the main areas explored:</p>
+<ul>
+<li class=""><strong>Number of Unique Participants:</strong> Calculated the total number of distinct purchasers and encashers to understand the diversity in participation.</li>
+<li class=""><strong>Total Transaction Amounts:</strong> Summed up the total money involved in all transactions to gauge the scale of electoral bonds dealings.</li>
+<li class=""><strong>Statistical Measures:</strong> Examined the average (mean), median, and various quantiles (25th, 50th, and 75th percentiles) of the transaction amounts to understand the distribution and central tendencies.</li>
+<li class=""><strong>Purchaser Summaries:</strong> Grouped the total purchases by each purchaser along with their respective purchasing dates, providing insights into the most active participants.</li>
+<li class=""><strong>Yearly and Monthly Analyses:</strong> Created plots to visualize how the total purchase amounts varied across different years and months, offering a temporal perspective on the data.</li>
+<li class=""><strong>Interactive Visualizations:</strong> Utilized Plotly to generate interactive charts, enabling a dynamic exploration of how different purchasers behaved over time.</li>
+<li class=""><strong>Encasher Summaries:</strong> Similar to purchasers, I analyzed the total encashments by each political party and included the dates of encashment, highlighting the primary beneficiaries.</li>
+<li class=""><strong>Encashment Trends:</strong> Illustrated through plots how the total amounts encashed fluctuated across years and months, shedding light on the temporal patterns from the encashers' perspective.</li>
+</ul>
+<p>The approach employed for this analysis utilizes Python and libraries like Pandas, Streamlit, and Plotly to process, analyze, and visualize the data. Streamlit was chosen for its ability to quickly create interactive web apps, allowing for a more engaging presentation of the findings. Plotly, on the other hand, adds an interactive dimension to the data visualizations, making the exploration of trends more intuitive.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="screenshots-of-the-visualizations">Screenshots of the visualizations<a href="https://utk09.com/blogs/electoral-bonds-analysis#screenshots-of-the-visualizations" class="hash-link" aria-label="Direct link to Screenshots of the visualizations" title="Direct link to Screenshots of the visualizations" translate="no">​</a></h3>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="purchaser details 1" src="https://utk09.com/assets/images/purchaser_details_1-ded7cc179c7c7293811af1cdd7067e50.png" title="purchaser details 1" width="2676" height="544" class="img_ev3q"></th></tr></thead></table>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="purchaser details 2" src="https://utk09.com/assets/images/purchaser_details_2-12fe407102ed0c6c19435e11efb31e1f.png" title="purchaser details 2" width="2360" height="1134" class="img_ev3q"></th></tr></thead></table>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="purchaser details 3" src="https://utk09.com/assets/images/purchaser_details_3-46d2d7a7d2061de608191ee8f11fc747.png" title="purchaser details 3" width="2874" height="1504" class="img_ev3q"></th></tr></thead></table>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="encasher details 1" src="https://utk09.com/assets/images/encasher_details_1-6678b187de6f5ceada40bb2b7cd0b6e7.png" title="encasher details 1" width="2610" height="506" class="img_ev3q"></th></tr></thead></table>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="encasher details 2" src="https://utk09.com/assets/images/encasher_details_2-c295e4ea3f09738ccca374ef67eb3000.png" title="encasher details 2" width="2284" height="1038" class="img_ev3q"></th></tr></thead></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hosted-application">Hosted Application<a href="https://utk09.com/blogs/electoral-bonds-analysis#hosted-application" class="hash-link" aria-label="Direct link to Hosted Application" title="Direct link to Hosted Application" translate="no">​</a></h2>
+<p>I made a Streamlit app where you can interact with the data: <strong><a href="https://electoral-bonds-data-analysis.streamlit.app/" target="_blank" rel="noopener noreferrer" class="">https://electoral-bonds-data-analysis.streamlit.app/</a></strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://utk09.com/blogs/electoral-bonds-analysis#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h2>
+<p>Working on this project was a big learning experience. I got to know more about electoral bonds and how to handle PDFs. The project is still ongoing, and I plan to add more features. If you have any ideas or comments, feel free to contact me on <a href="https://twitter.com/utk09" target="_blank" rel="noopener noreferrer" class="">Twitter</a> or open an issue on <a href="https://github.com/utk09/electoral-bonds-data-analysis/issues" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>]]></content>
+        <author>
+            <name>Utkarsh Tiwari</name>
+            <uri>https://github.com/utk09</uri>
+        </author>
+        <category label="python" term="python"/>
+        <category label="data-analysis" term="data-analysis"/>
+        <category label="data-visualization" term="data-visualization"/>
+        <category label="electoral-bonds" term="electoral-bonds"/>
+        <category label="streamlit" term="streamlit"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to resolve vulnerabilities in Front-End Applications]]></title>
+        <id>https://utk09.com/blogs/resolve-vulnerabilities-in-frontend-apps</id>
+        <link href="https://utk09.com/blogs/resolve-vulnerabilities-in-frontend-apps"/>
+        <updated>2024-03-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to tackle vulnerabilities in front-end libraries such as React.js, Angular, and Vue.js to enhance your application's security.]]></summary>
+        <content type="html"><![CDATA[<p>If you're working with front-end frameworks like React.js, Angular, or Vue.js, or if your project relies on a <code>package.json</code> file, you might encounter vulnerabilities when running <code>npm audit</code> or <code>yarn audit</code>. These vulnerabilities pose a security risk and need to be addressed promptly. This article will guide you through resolving vulnerabilities, particularly in React.js-based projects.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-vulnerabilities">Understanding Vulnerabilities<a href="https://utk09.com/blogs/resolve-vulnerabilities-in-frontend-apps#understanding-vulnerabilities" class="hash-link" aria-label="Direct link to Understanding Vulnerabilities" title="Direct link to Understanding Vulnerabilities" translate="no">​</a></h2>
+<p>Vulnerabilities refer to flaws or weaknesses in a software system that attackers can exploit to undermine the system's integrity, availability, or confidentiality. These can emerge from outdated packages, insecure configurations, or flawed code.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resolving-vulnerabilities-in-direct-dependencies">Resolving Vulnerabilities in Direct Dependencies<a href="https://utk09.com/blogs/resolve-vulnerabilities-in-frontend-apps#resolving-vulnerabilities-in-direct-dependencies" class="hash-link" aria-label="Direct link to Resolving Vulnerabilities in Direct Dependencies" title="Direct link to Resolving Vulnerabilities in Direct Dependencies" translate="no">​</a></h2>
+<p>Direct dependencies (or devDependencies) are the packages that your project directly relies on. Here’s how you can address vulnerabilities in your React.js, Angular, or Vue.js applications:</p>
+<ol>
+<li class="">
+<p><strong>Identify Vulnerabilities:</strong> Execute <code>npm audit</code> or <code>yarn audit</code> to uncover any vulnerabilities within your project.</p>
+</li>
+<li class="">
+<p><strong>Assess Breaking Changes:</strong> Before updating any packages, verify whether there are breaking changes in the newer versions. Review the release notes of the packages or use <code>npm outdated</code> or <code>yarn outdated</code> to identify any significant changes that could impact your application.</p>
+</li>
+<li class="">
+<p><strong>Update Packages:</strong> After evaluating for breaking changes, rectify the vulnerabilities by executing <code>npm audit fix</code> or <code>yarn audit fix</code>. This will typically upgrade the packages to the latest versions, thereby resolving the security issues. If you want to update a specific package, you can use <code>npm install package-name@latest</code> or <code>yarn add package-name@latest</code>. <strong>Note:</strong> Avoid using <code>npm audit fix --force</code> or <code>yarn audit fix --force</code> as it can sometimes lead to downgrading packages, which might introduce new vulnerabilities. In such cases, it's better to manually update the packages by specifying the version in the <code>package.json</code> file.</p>
+</li>
+<li class="">
+<p><strong>Automate Security Checks:</strong> Incorporate vulnerability checks into your CI/CD pipeline by using <code>npm audit</code> or <code>yarn audit</code> and configure the pipeline to fail if vulnerabilities are detected. Additionally, tools like <code>npm audit fix</code> or <code>yarn audit fix</code> can be employed to automatically correct vulnerabilities, streamlining the maintenance of your project's security.</p>
+</li>
+</ol>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="npm audit" src="https://utk09.com/assets/images/npm-audit-3a0076c9643c9e76e66d9d449c05ea3e.png" title="npm audit" width="2790" height="572" class="img_ev3q"></th></tr></thead></table>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="npm audit fix --force" src="https://utk09.com/assets/images/npm-audit-fix-force-c3b74c420da27525ea68e50377ddcdbd.png" title="npm audit fix --force" width="2880" height="1190" class="img_ev3q"></th></tr></thead></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resolving-vulnerabilities-in-indirect-dependencies">Resolving Vulnerabilities in Indirect Dependencies<a href="https://utk09.com/blogs/resolve-vulnerabilities-in-frontend-apps#resolving-vulnerabilities-in-indirect-dependencies" class="hash-link" aria-label="Direct link to Resolving Vulnerabilities in Indirect Dependencies" title="Direct link to Resolving Vulnerabilities in Indirect Dependencies" translate="no">​</a></h2>
+<p>Vulnerabilities can also occur in indirect (or transitive) dependencies, which are packages that your direct dependencies require. These vulnerabilities need careful handling to avoid breaking your project. Here’s how to deal with vulnerabilities in indirect dependencies effectively:</p>
+<ol>
+<li class="">
+<p><strong>Identify Indirect Vulnerabilities:</strong> Run <code>npm audit</code> or <code>yarn audit</code>. These commands help in identifying both direct and indirect dependency vulnerabilities.</p>
+</li>
+<li class="">
+<p><strong>Analyze the Dependency Tree:</strong> Use <code>npm ls &lt;package_name&gt;</code> or <code>yarn list --pattern &lt;package_name&gt;</code> to understand the dependency chain. This helps in pinpointing which direct dependencies are causing the indirect vulnerabilities.</p>
+</li>
+<li class="">
+<p><strong>Update Direct Dependencies:</strong> Often, updating your project's direct dependencies can also update the indirect ones, resolving vulnerabilities. Follow the general update procedures as outlined in previous sections.</p>
+</li>
+<li class="">
+<p><strong>Manual Updates for Indirect Dependencies:</strong> If direct updates don't resolve the issues, you can manually update indirect dependencies in <code>Node.js v16.14.2 or later</code> and <code>npm v8.3.0 or later</code>. Add <code>overrides</code> field in your <code>package.json</code>:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token property">"overrides"</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token property">"semver"</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">"6.3.1"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><br></span></code></pre></div></div>
+<p>After specifying the override, run <code>npm install</code> or <code>yarn install</code>. This modification forces all uses of the semver package to the specified version, potentially resolving the vulnerabilities. However, ensure compatibility as this may lead to issues if the updated version is incompatible with other dependencies.</p>
+</li>
+<li class="">
+<p><strong>Specifying Overrides for Specific Packages:</strong> If you need to target a specific package for the update, you might add a more targeted override in your <code>package.json</code>:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token property">"overrides"</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token property">"@vitejs/plugin-react"</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">      </span><span class="token property">"semver"</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">"6.3.1"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><br></span></code></pre></div></div>
+<p>This ensures that only <code>@vitejs/plugin-react</code> uses the specified version of <code>semver</code>. Implement this, then run <code>npm install</code> or <code>yarn install</code> to apply the changes.</p>
+</li>
+<li class="">
+<p><strong>CI/CD Integration:</strong> Even if your CI/CD pipeline operates under <code>Node.js version 14</code>, you can address vulnerabilities in indirect dependencies by leveraging the <code>overrides</code> feature. First, ensure that you have <code>Node.js version ^16.14.0</code> locally. Then, add the necessary overrides to your <code>package.json</code> and run <code>npm install</code>. This process should generate an updated <code>package-lock.json</code> file reflecting the changes.
+In your CI/CD pipeline, utilize the <code>package-lock.json</code> file from your local development environment to install dependencies. Execute the following command:</p>
+</li>
+</ol>
+<div class="language-sh codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-sh codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">npm ci</span><br></span></code></pre></div></div>
+<p>This specific command ensures that your project installs dependencies exactly as defined in your <code>package-lock.json</code>, applying the overrides as intended and maintaining consistency across environments.</p>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="npm ls semver" src="https://utk09.com/assets/images/npm-ls-semver-406e4fd6a923099226790f1d1f51e5d8.png" title="npm ls semver" width="883" height="290" class="img_ev3q"></th></tr></thead></table>
+<table><thead><tr><th><img decoding="async" loading="lazy" alt="adding overrides" src="https://utk09.com/assets/images/adding-overrides-de823b9e5b6d3810e2eae647a71e57f9.png" title="adding overrides" width="736" height="492" class="img_ev3q"></th></tr></thead></table>
+<p><strong>It's crucial to thoroughly test your application after making these changes to ensure everything works correctly and the vulnerabilities are resolved.</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices-for-security-maintenance">Best Practices for Security Maintenance<a href="https://utk09.com/blogs/resolve-vulnerabilities-in-frontend-apps#best-practices-for-security-maintenance" class="hash-link" aria-label="Direct link to Best Practices for Security Maintenance" title="Direct link to Best Practices for Security Maintenance" translate="no">​</a></h2>
+<p>Enhance the security of your front-end applications with these straightforward practices:</p>
+<ol>
+<li class="">
+<p><strong>Update Packages Regularly:</strong> Always use the latest versions of your packages to benefit from recent security updates. Consistent updates prevent compatibility issues and reduce security risks.</p>
+</li>
+<li class="">
+<p><strong>Automate Security:</strong> Implement automated security scans within your CI/CD pipeline. Early detection of vulnerabilities helps in their quick resolution, keeping your production environment secure.</p>
+</li>
+<li class="">
+<p><strong>Utilize Security Tools:</strong> Employ tools like <code>npm audit</code> or <code>yarn audit</code> to find and address vulnerabilities. Tools such as <a href="https://snyk.io/" target="_blank" rel="noopener noreferrer" class=""><code>snyk</code></a> or <code>npm audit fix</code> can help automate the fixing process.</p>
+</li>
+<li class="">
+<p><strong>Specify Exact Versions:</strong> When adding packages, use the <code>--save-exact</code> flag with <code>npm install</code> or <code>yarn add</code> to <strong>lock</strong> the versions. This prevents unintended updates and maintains consistency, reducing the likelihood of introducing vulnerabilities.</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://utk09.com/blogs/resolve-vulnerabilities-in-frontend-apps#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h2>
+<p>Vulnerabilities in front-end applications represent considerable security threats. However, by adhering to the guidelines provided in this article, you can effectively mitigate these risks in your React.js, Angular, or Vue.js projects. Regular updates to your packages and the integration of automated security checks into your CI/CD processes are crucial steps in preserving the security and integrity of your applications. Stay proactive in your security practices to ensure a safer web environment for all users.</p>
+<hr>]]></content>
+        <author>
+            <name>Utkarsh Tiwari</name>
+            <uri>https://github.com/utk09</uri>
+        </author>
+        <category label="vulnerabilities" term="vulnerabilities"/>
+        <category label="react" term="react"/>
+        <category label="angular" term="angular"/>
+        <category label="vue" term="vue"/>
+        <category label="front-end" term="front-end"/>
+        <category label="security" term="security"/>
+        <category label="libraries" term="libraries"/>
+        <category label="package.json" term="package.json"/>
+        <category label="npm" term="npm"/>
+        <category label="yarn" term="yarn"/>
+    </entry>
+</feed>

@@ -1,0 +1,102 @@
+{
+  "permalink": "/blogs/resolve-vulnerabilities-in-frontend-apps",
+  "editUrl": "https://github.com/utk09/utk09.github.io/edit/main/blog/2024-03-02/index.md",
+  "source": "@site/blog/2024-03-02/index.md",
+  "title": "How to resolve vulnerabilities in Front-End Applications",
+  "description": "Learn how to tackle vulnerabilities in front-end libraries such as React.js, Angular, and Vue.js to enhance your application's security.",
+  "date": "2024-03-02T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "vulnerabilities",
+      "permalink": "/blogs/tags/vulnerabilities"
+    },
+    {
+      "inline": true,
+      "label": "react",
+      "permalink": "/blogs/tags/react"
+    },
+    {
+      "inline": true,
+      "label": "angular",
+      "permalink": "/blogs/tags/angular"
+    },
+    {
+      "inline": true,
+      "label": "vue",
+      "permalink": "/blogs/tags/vue"
+    },
+    {
+      "inline": true,
+      "label": "front-end",
+      "permalink": "/blogs/tags/front-end"
+    },
+    {
+      "inline": true,
+      "label": "security",
+      "permalink": "/blogs/tags/security"
+    },
+    {
+      "inline": true,
+      "label": "libraries",
+      "permalink": "/blogs/tags/libraries"
+    },
+    {
+      "inline": true,
+      "label": "package.json",
+      "permalink": "/blogs/tags/package-json"
+    },
+    {
+      "inline": true,
+      "label": "npm",
+      "permalink": "/blogs/tags/npm"
+    },
+    {
+      "inline": true,
+      "label": "yarn",
+      "permalink": "/blogs/tags/yarn"
+    }
+  ],
+  "readingTime": 4.91,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Utkarsh Tiwari",
+      "title": "FX UI Developer (AVP) at Barclays",
+      "url": "https://github.com/utk09",
+      "socials": {
+        "twitter": "https://twitter.com/utk0909",
+        "github": "https://github.com/utk09",
+        "linkedin": "https://www.linkedin.com/in/utkarsh09/"
+      },
+      "imageURL": "https://github.com/utk09.png",
+      "key": "utk09",
+      "page": null
+    }
+  ],
+  "frontMatter": {
+    "slug": "resolve-vulnerabilities-in-frontend-apps",
+    "title": "How to resolve vulnerabilities in Front-End Applications",
+    "description": "Learn how to tackle vulnerabilities in front-end libraries such as React.js, Angular, and Vue.js to enhance your application's security.",
+    "authors": [
+      "utk09"
+    ],
+    "tags": [
+      "vulnerabilities",
+      "react",
+      "angular",
+      "vue",
+      "front-end",
+      "security",
+      "libraries",
+      "package.json",
+      "npm",
+      "yarn"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Electoral Bonds Analysis using Python",
+    "permalink": "/blogs/electoral-bonds-analysis"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "All Posts",
+  "items": [
+    {
+      "title": "Electoral Bonds Analysis using Python",
+      "permalink": "/blogs/electoral-bonds-analysis",
+      "unlisted": false,
+      "date": "2024-03-19T00:00:00.000Z"
+    },
+    {
+      "title": "How to resolve vulnerabilities in Front-End Applications",
+      "permalink": "/blogs/resolve-vulnerabilities-in-frontend-apps",
+      "unlisted": false,
+      "date": "2024-03-02T00:00:00.000Z"
+    }
+  ]
+}
